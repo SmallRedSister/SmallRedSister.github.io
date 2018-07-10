@@ -16,9 +16,13 @@
   
   
   
-    <meta name="description" content="SmallRedSister.github.io小红妹网页版简历">
+    <meta name="description" content="看到别人有自己的个人技术博客，自己也想要一个，于是走上了搭建（zhuang）个人(bi)博客之路。起初我是想要一个网页版的简历（我会放到个人博客网站），我是使用GitHub Pages+hexo实现的，也推荐大家使用该方法（主要是服务器免费）。本人半科班出道，安卓开发，有些前端基础，如果你也想拥有自己的博客网站，我想接下来的文章会让你少走弯路。
+可以先看下我的网站效果:
+
+个人博客网站地址
+...">
   
-  <title>为学日益<·>为道日损 [ 小红妹 ]</title>
+  <title>GitHub Pages+hexo搭建个人博客全教程之准备工作 [ 小红妹 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -37,6 +41,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2018/07/08/hello-world/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hello World
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -108,15 +121,103 @@
     <div id="content-inner">
       
       
-  <article id="page">
-    
-    
-      <h1 class=""></h1>
+  <article id="post">
+    <h1>GitHub Pages+hexo搭建个人博客全教程之准备工作</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2018-07-10</span>
       
-      <h1 id="SmallRedSister-github-io"><a href="#SmallRedSister-github-io" class="headerlink" title="SmallRedSister.github.io"></a>SmallRedSister.github.io</h1><p>小红妹网页版简历</p>
-
+        <span id = "post-title-updated">修改于 2018-07-10</span>
+      
+      
+      <span id = "post-title-categories">分类
+      
+      
+        
+        
+        <a href="/categories/GitHub/">GitHub</a>
+      
+      </span>
+      
+      
+      <span id = "post-title-tags">
+      标签
+      
+      
+        
+        
+        <a href="/tags/GitHub-Pages-hexo-搭建个人博客/">GitHub Pages+hexo/搭建个人博客</a>
+      
+      </span>
+      
+    </p>
     
+    <p>看到别人有自己的个人技术博客，自己也想要一个，于是走上了搭建（zhuang）个人(bi)博客之路。起初我是想要一个网页版的简历（我会放到个人博客网站），我是使用GitHub Pages+hexo实现的，也推荐大家使用该方法（主要是服务器免费）。本人半科班出道，安卓开发，有些前端基础，如果你也想拥有自己的博客网站，我想接下来的文章会让你少走弯路。</p>
+<p>可以先看下我的网站效果:</p>
+<ul>
+<li><a href="http://xiaweizi.cn/" target="_blank" rel="noopener">个人博客网站地址</a></li>
+<li><a href="https://github.com/SmallRedSister/SmallRedSister.github.io" target="_blank" rel="noopener">GitHub</a></li>
+</ul>
+<h2 id="你需要的准备工作："><a href="#你需要的准备工作：" class="headerlink" title="你需要的准备工作："></a>你需要的准备工作：</h2><table>
+<thead>
+<tr>
+<th>目录</th>
+<th>是否必备</th>
+<th>为什么要用它？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td>是</td>
+<td>我们用到GitHub Pages做为服务器，必须有一个GitHub账号</td>
+</tr>
+<tr>
+<td>git</td>
+<td>是</td>
+<td>git用来分布式管理项目（博客就是项目）</td>
+</tr>
+<tr>
+<td>Node.js</td>
+<td>是</td>
+<td>为了让网站有更好的效果</td>
+</tr>
+<tr>
+<td>Sublime Text</td>
+<td>可选</td>
+<td>这个东西可以帮助我们打开各种格式的文件并修改其内容</td>
+</tr>
+<tr>
+<td>Typora</td>
+<td>可选</td>
+<td>后期写博客神器，推荐</td>
+</tr>
+<tr>
+<td>MPic</td>
+<td>可选</td>
+<td>图床神器，和Typora配合使用，如果你是Mac系统，使用IPic</td>
+</tr>
+<tr>
+<td>Bmob</td>
+<td>可选</td>
+<td>这个还是挺好的，后期存图片，博客加载图片的来源</td>
+</tr>
+<tr>
+<td>域名</td>
+<td>可选</td>
+<td>我是使用自己域名的，这东西自己考虑一下，推荐你有一个</td>
+</tr>
+</tbody>
+</table>
+
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#你需要的准备工作："><span class="toc-text">你需要的准备工作：</span></a></li></ol>
+  </div>
+</div>
 
   
 <nav id="pagination">
@@ -124,6 +225,8 @@
 
   
 
+  
+    <a href="/2018/07/08/hello-world/" class="next">下一篇 Hello World &rarr;</a>
   
 </nav>
 
@@ -317,6 +420,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "34495E";
