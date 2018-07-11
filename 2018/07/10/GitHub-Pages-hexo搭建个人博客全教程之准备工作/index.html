@@ -160,7 +160,7 @@ G...">
 <p>  git clone  <a href="https://github.com/SmallRedSister/SmallRedSister.github.io.git" target="_blank" rel="noopener">https://github.com/SmallRedSister/SmallRedSister.github.io.git</a><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"> ![将GitHub仓库克隆到本地](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/ae31682a40662e6e80f95260dc02b128.gif)</span><br><span class="line"></span><br><span class="line">你会在你的文件中看到名为README文件，其中文件名是你的仓库路径名。</span><br><span class="line"></span><br><span class="line">![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/49dbb74040a727e2807558aa91633f8a.png)</span><br><span class="line"></span><br><span class="line">第二步：上传HTML文件，如果你的前端可以的话，自己写然后上传。在你clone下的文件夹下（SmallRedSister.github.io）新建index.html文件，内容你可以自己写，也可以用下面我提供的代码作为测试。</span><br></pre></td></tr></table></figure></p>
 <p>  &lt;!DOCTYPE html&gt;<br>  <html><br>  <body> <h1>这是我使用github pages搭建的个人站点。</h1><br>  <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body><br>  </html><br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">接下来我们提交文件，在空白处右击选中Git Bash Here，依次输入如下代码，</span><br></pre></td></tr></table></figure></p>
 <p>  git add .    //这个写好之后，按回车键再输入git commit -m “首次提交”命令<br>  git commit -m “首次提交”   //这个写好之后，按回车键再输入git push命令<br>  git push    //写好按回车键<br>  最后会提示你输入GitHub用户名和密码。<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">更新成功之后，你的个人博客网站算是有一点苗头了，你可以在浏览器输入你的GitHub仓库路径看效果。</span><br></pre></td></tr></table></figure></p>
-<p>  <a href="https://SmallRedSister.github.io" target="_blank" rel="noopener">https://SmallRedSister.github.io</a>    //这是我的，请输入你的好吧<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">- 添加CNAME文件</span><br><span class="line"></span><br><span class="line">  添加CNAME文件是让你的GitHub仓库路径绑定你的域名，下次你搜索仓库路径时会自动跳到你的域名。</span><br><span class="line"></span><br><span class="line">  这样你就有属于自己域名的个人博客网站。添加CNAME文件有两种方法，选一种你喜欢的就行。</span><br><span class="line"></span><br><span class="line">  第一种：和使用git提交index文件一样</span><br><span class="line"></span><br><span class="line">  新建CNAME文件，内容是你的域名，比如我的域名：liaichuan.top ，注意没有前缀https:// 也没有www，</span><br><span class="line"></span><br><span class="line">  你不放心的话，请前往阿里云复制过来。提交程序和提交index文件一样，往回看，这里不重复。</span><br><span class="line"></span><br><span class="line">  第二种方法：在GitHub仓库新建一个文件即可</span><br><span class="line"></span><br><span class="line">  ![添加CNAME文件](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/996bc1df4087136d80429c698d82259a.gif)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### Git</span><br><span class="line"></span><br><span class="line">1. 下载安装</span><br><span class="line">2. 初次安装 Git 配置Git</span><br><span class="line">3. 配置 SSH keys</span><br><span class="line"></span><br><span class="line">- 下载安装给Git</span><br><span class="line"></span><br><span class="line">[Git客户端 官方下载地址](https://git-scm.com/)</span><br><span class="line"></span><br><span class="line">- 初次安装Git配置 Git</span><br><span class="line"></span><br><span class="line">Git 会根据用户的名字和邮箱来记录提交，那么设置你的名字和邮件地址：[更多设置请移步Git官网教程](https://git-scm.com/book/zh/v2/自定义-Git-配置-Git)</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">$ git config --global user.name &quot;John Doe&quot;  //你的GitHub名字</span><br><span class="line">$ git config --global user.email &quot;johndoe@example.com&quot;   //你注册GitHub时使用的邮箱</span><br></pre></td></tr></table></figure></p>
+<p>  <a href="https://SmallRedSister.github.io" target="_blank" rel="noopener">https://SmallRedSister.github.io</a>    //这是我的，请输入你的好吧<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">- 添加CNAME文件</span><br><span class="line"></span><br><span class="line">  添加CNAME文件是让你的GitHub仓库路径绑定你的域名，下次你搜索仓库路径时会自动跳到你的域名。</span><br><span class="line"></span><br><span class="line">  这样你就有属于自己域名的个人博客网站。添加CNAME文件有两种方法，选一种你喜欢的就行。</span><br><span class="line"></span><br><span class="line">  第一种：和使用git提交index文件一样</span><br><span class="line"></span><br><span class="line">  新建CNAME文件，内容是你的域名，比如我的域名：liaichuan.top ，注意没有前缀https:// 也没有www，</span><br><span class="line"></span><br><span class="line">  你不放心的话，请前往阿里云复制过来。提交程序和提交index文件一样，往回看，这里不重复。</span><br><span class="line"></span><br><span class="line">  第二种方法：在GitHub仓库新建一个文件即可</span><br><span class="line"></span><br><span class="line">  ![添加CNAME文件](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/996bc1df4087136d80429c698d82259a.gif)</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### Git</span><br><span class="line"></span><br><span class="line">1. 下载安装</span><br><span class="line">2. 初次安装 Git 配置Git</span><br><span class="line">3. 配置 SSH keys</span><br><span class="line"></span><br><span class="line">- 下载安装给Git</span><br><span class="line"></span><br><span class="line">  [Git客户端 官方下载地址](https://git-scm.com/)</span><br><span class="line"></span><br><span class="line">- 初次安装Git配置 Git</span><br><span class="line"></span><br><span class="line">Git 会根据用户的名字和邮箱来记录提交，那么设置你的名字和邮件地址：[更多设置请移步Git官网教程](https://git-scm.com/book/zh/v2/自定义-Git-配置-Git)</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">$ git config --global user.name &quot;John Doe&quot;  //你的GitHub名字</span><br><span class="line">$ git config --global user.email &quot;johndoe@example.com&quot;   //你注册GitHub时使用的邮箱</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>配置 SSH keys</li>
 </ul>
@@ -172,14 +172,81 @@ G...">
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa): &lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
 <p>Git会弹出一个对话框，让你输入GitHub的密码。之后会在用户目录下生成一个.ssh文件，打开本地 id_rsa.pub 文件，此文件里面内容为刚才生成的密钥，复制里面的全部内容。然后点击GitHub头像—&gt;settings—&gt;SSH and GPG keys—&gt;new SSH key—-&gt;Title（随便填一个名字）—&gt;Key（复制SSH密钥进去）—&gt;Add SSH key。</p>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/10/0b9850fc404ff9f980815d2787c8f612.gif" alt="配置SSH密钥"></p>
-<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3>
+<h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><ol>
+<li>下载Node.js</li>
+<li>安装Node.js</li>
+<li>Node.js环境配置</li>
+</ol>
+<ul>
+<li>下载Node.js</li>
+</ul>
+<p>​     <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js官网下载地址</a>  看电脑系统来下载，我这是wind系统的，如果你是Mac的，那就下载对应版本。</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/ba917b79402ba2308075172eee7a106a.png" alt=""></p>
+<ul>
+<li><p>安装Node.js</p>
+<p><a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">推荐一个网站 菜鸟教程</a> ，里面有很多的教程，有空学习一下。安装Node.js里面也有。</p>
+<p>步骤 1 : 双击下载后的安装包</p>
+<p>步骤 2: 勾选接受协议选项，点击 next（下一步） 按钮 : </p>
+<p>步骤 3 : Node.js默认安装目录为 “C:\Program Files\nodejs\” , 你可以修改目录，并点击 next（下一步）： </p>
+<p>步骤 4 : 点击树形图标来选择你需要的安装模式 , 然后点击下一步 next（下一步） ，建议默认。</p>
+<p>步骤 5 :点击 Install（安装） 开始安装Node.js。你也可以点击 Back（返回）来修改先前的配置。 然后并点击 next（下一步）。</p>
+<p>步骤6：安装过程， 点击 Finish（完成）按钮退出安装向导。 </p>
+</li>
+</ul>
+<ul>
+<li><p>Node.js环境配置</p>
+<p>Node.js安装完毕后会自动在系统的path环境变量中配置了node.exe的目录路径，</p>
+<p>检测PATH环境变量是否配置了Node.js，按开始键（wind）+R—&gt;输入”cmd” —&gt; 输入命令”path”，输出结果有如下代码就好：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\nodejs\</span><br></pre></td></tr></table></figure>
+<p>检查Node.js版本号并检查npm：开始键（wind）+R—&gt;输入”cmd” —&gt; 输入命令”node –version”，</p>
+<h3 id="安装Node-js时会自动给你安装了nmp，npm是Node-js的包管理工具（package-manager）。出现版本号说明成功。"><a href="#安装Node-js时会自动给你安装了nmp，npm是Node-js的包管理工具（package-manager）。出现版本号说明成功。" class="headerlink" title="安装Node.js时会自动给你安装了nmp，npm是Node.js的包管理工具（package manager）。出现版本号说明成功。"></a>安装Node.js时会自动给你安装了nmp，npm是Node.js的包管理工具（package manager）。出现版本号说明成功。</h3></li>
+</ul>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/7880e8d2407d122080b393c9ec0bd5da.gif" alt=""></p>
+<h3 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h3><p>神器不多说，谁用谁知道。<a href="http://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text官网</a> ，如果你已经拥用请跳过。进官网之后点Download，</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/087d94204058989180794b98c650bbf6.png" alt=""></p>
+<p>点击下载的应用程序进行安装（Sublime Text Build 3176 x64 Setup），安装没咋好说的，后面那些添加插件呀什么的，自己找时间弄。</p>
+<h3 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h3><ol>
+<li>下载Typora</li>
+<li>安装Typora</li>
+</ol>
+<ul>
+<li><p>下载Typora</p>
+<p>Typora是免费极简 Markdown 编辑器！好用的 MD 格式阅读器。我这篇博客就是用它写的（当然也用到ST）</p>
+<p><a href="https://www.typora.io/" target="_blank" rel="noopener">Typora官网</a>  进入官网拉到底部，点击Windows。Typor是用来写博客的，后面专门写一篇博客详细介绍。</p>
+</li>
+</ul>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/e1c768b2407cc53c80f4c3a059aa90ea.png" alt=""></p>
+<ul>
+<li><p>安装Typora</p>
+<p>点击下载的 typora-setup-x64 应用程序进行安装。默认安装，要改的话就是安装路径。</p>
+</li>
+</ul>
+<h3 id="MPic"><a href="#MPic" class="headerlink" title="MPic"></a>MPic</h3><ol>
+<li>下载MPic</li>
+<li>安装MPic</li>
+</ol>
+<ul>
+<li><p>下载MPic</p>
+<p><a href="http://mpic.lzhaofu.cn" target="_blank" rel="noopener">MPic 官方网址</a>   点击立即下载。如果你是Mac系统，使用<a href="https://toolinbox.net/iPic/" target="_blank" rel="noopener">IPic</a> 。</p>
+</li>
+</ul>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/b05f66bb404be8ac80d87b4ea6a2956e.png" alt=""></p>
+<ul>
+<li><p>安装MPic</p>
+<p>MPic 2.2.1.3 解压压缩包，点击MPic.exe安装。</p>
+</li>
+</ul>
+<p>说明：MPic仅支持<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a>，七牛云我不是很了解，使用七牛云会有的麻烦，要实名认证，虽然是免费的，还要在里面存10钱，如果你嫌麻烦，那使用Bmob。</p>
+<h3 id="Bmob"><a href="#Bmob" class="headerlink" title="Bmob"></a>Bmob</h3><p><a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a>这个你可以去了解一下，提前注册一个号，最好看下文档，后面写博客的时候我会详细介绍。我的图片不用七牛云存，用的是Bmob.</p>
+<p>总结：这篇博客写到这吧！写不动了，下一篇我们说 GitHub Pages+hexo搭建个人博客全教程之hexo，</p>
+
   </article>
   <div class="random-toc-area">
   <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
     <h2>目录</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#可以先看下我的网站效果"><span class="toc-text">可以先看下我的网站效果:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#你需要的准备工作："><span class="toc-text">你需要的准备工作：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-text">这是我使用github pages搭建的个人站点。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js"><span class="toc-text">Node.js</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#可以先看下我的网站效果"><span class="toc-text">可以先看下我的网站效果:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#你需要的准备工作："><span class="toc-text">你需要的准备工作：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-text">这是我使用github pages搭建的个人站点。</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js"><span class="toc-text">Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Node-js时会自动给你安装了nmp，npm是Node-js的包管理工具（package-manager）。出现版本号说明成功。"><span class="toc-text">安装Node.js时会自动给你安装了nmp，npm是Node.js的包管理工具（package manager）。出现版本号说明成功。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sublime-Text-3"><span class="toc-text">Sublime Text 3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Typora"><span class="toc-text">Typora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MPic"><span class="toc-text">MPic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bmob"><span class="toc-text">Bmob</span></a></li></ol></li></ol>
   </div>
 </div>
 
