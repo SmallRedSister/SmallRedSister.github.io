@@ -182,7 +182,7 @@ G...">
 <li><p>Node.js环境配置</p>
 <p>Node.js安装完毕后会自动在系统的path环境变量中配置了node.exe的目录路径，</p>
 <p>检测PATH环境变量是否配置了Node.js，按开始键（wind）+R—&gt;输入”cmd” —&gt; 输入命令”path”，输出结果有如下代码就好：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\nodejs\</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\nodejs\</span><br></pre></td></tr></table></figure>
 <p>检查Node.js版本号并检查npm：开始键（wind）+R—&gt;输入”cmd” —&gt; 输入命令”node –version”，</p>
 <p>安装Node.js时会自动给你安装了nmp，npm是Node.js的包管理工具（package manager）。出现版本号说明成功。</p>
 </li>
@@ -238,16 +238,16 @@ G...">
 <p>这步之后都需要使用Git，请确保你已经把Git部分弄好。如果你还没安装Git，请跳过往下看Git部分。</p>
 <p>第一步，将GitHub仓库克隆到本地，</p>
 <p>找到一个你想放入项目磁盘文件中右击选中Git Bash Here, git clone 你的GitHub仓库路径，后面加上.git。例如我的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone  https://github.com/SmallRedSister/SmallRedSister.github.io.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span>  https://github.com/SmallRedSister/SmallRedSister.github.io.git</span><br></pre></td></tr></table></figure>
 <p> <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/ae31682a40662e6e80f95260dc02b128.gif" alt="将GitHub仓库克隆到本地"></p>
 <p>你会在你的文件中看到名为README文件，其中文件名是你的仓库路径名。</p>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/49dbb74040a727e2807558aa91633f8a.png" alt=""></p>
 <p>第二步：上传HTML文件，如果你的前端可以的话，自己写然后上传。在你clone下的文件夹下（SmallRedSister.github.io）新建index.html文件，内容你可以自己写，也可以用下面我提供的代码作为测试。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt; </span><br><span class="line">&lt;body&gt; &lt;h1&gt;这是我使用github pages搭建的个人站点。&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt; </span><br><span class="line">&lt;body&gt; &lt;h1&gt;这是我使用github pages搭建的个人站点。&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>接下来我们提交文件，在空白处右击选中Git Bash Here，依次输入如下代码，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .    //这个写好之后，按回车键再输入git commit -m &quot;首次提交&quot;命令</span><br><span class="line">git commit -m &quot;首次提交&quot;   //这个写好之后，按回车键再输入git push命令</span><br><span class="line">git push    //写好按回车键</span><br><span class="line">最后会提示你输入GitHub用户名和密码。</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .    //这个写好之后，按回车键再输入git commit -m <span class="string">"首次提交"</span>命令</span><br><span class="line">git commit -m <span class="string">"首次提交"</span>   //这个写好之后，按回车键再输入git push命令</span><br><span class="line">git push    //写好按回车键</span><br><span class="line">最后会提示你输入GitHub用户名和密码。</span><br></pre></td></tr></table></figure>
 <p>更新成功之后，你的个人博客网站算是有一点苗头了，你可以在浏览器输入你的GitHub仓库路径看效果。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://SmallRedSister.github.io    //这是我的，请输入你的好吧</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://SmallRedSister.github.io    //这是我的，请输入你的好吧</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <ul>
