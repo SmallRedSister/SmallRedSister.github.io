@@ -268,14 +268,17 @@
     setInterval("createtime()",250);
     </script>
 
+
+  </div>
+
   <div id="container"></div>
   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
   <script>
   var gitment = new Gitment({
-    id: 'location.href', // 可选。默认为 location.href    评论留言
+    id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
     owner: 'SmallRedSister',
-    repo: 'https://github.com/SmallRedSister/SmallRedSister.github.io',
+    repo: 'SmallRedSister.github.io',
     oauth: {
       client_id: 'df6608e5d308f152d01e',
       client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
@@ -284,7 +287,6 @@
   gitment.render('container')
   </script>
 
-  </div>
 </div>
 
 </div>
