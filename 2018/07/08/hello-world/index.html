@@ -19,7 +19,7 @@
     <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Qu...">
   
-  <title>Hello World [ 小红妹 ]</title>
+  <title>Hello hexo [ 小红妹 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -132,11 +132,11 @@ Qu...">
       
       
   <article id="post">
-    <h1>Hello World</h1>
+    <h1>Hello hexo</h1>
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2018-07-08</span>
       
-        <span id = "post-title-updated">修改于 2018-07-08</span>
+        <span id = "post-title-updated">修改于 2018-07-12</span>
       
       
       
@@ -191,7 +191,8 @@ Qu...">
       
     </div>
     
-    @2018   
+    @2018  
+    阅读数量:<span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次 
     
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
@@ -211,10 +212,11 @@ Qu...">
     setInterval("createtime()",250);
     </script>
 
-
   </div>
 
-  <div id="container"></div>
+</div>
+
+<div id="container"></div>
   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
   <script>
@@ -229,8 +231,6 @@ Qu...">
   })
   gitment.render('container')
   </script>
-
-</div>
 
 </div>
 
@@ -431,4 +431,44 @@ plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
 
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script>
+    var APP_ID = '你的app id';
+    var APP_KEY = '你的app key';
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    // 显示次数
+    function showTime(Counter) {
+        var query = new AV.Query("Counter");
+        if($(".leancloud_visitors").length > 0){
+            var url = $(".leancloud_visitors").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+    // 追加pv
+    function addCount(Counter) {
+        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+        })
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        addCount(Counter);
+        showTime(Counter);
+    });
+</script>
 
