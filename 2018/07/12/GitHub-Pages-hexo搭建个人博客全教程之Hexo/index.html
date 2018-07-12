@@ -162,8 +162,7 @@
     
     <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/825e0e6740f3963d80c131acdc4849a5.jpg" alt="福利"></p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​       在GitHub Pages+hexo搭建个人博客全教程之准备工作整篇中都没有出现Hexo，考虑到尽可能的写得详细通俗易懂和篇幅问题，就放到这篇来写吧！其实，只要你完成了上一篇的准备工作，你的个人博客算是完成了50%（要达到我们标题说的确实还差一点），你完全可以自己写网页布局，然后提交到仓库就行；如果你和我一样懒得写（其实是不太会），那么我们直接使用第三方框架快速搭建博客，用的就是<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">Hexo（</a>建议你点链接进去了解一下）。</p>
-<p>什么是 Hexo？</p>
-<p>​       Hexo一个快速、简单、强大的博客框架，由NoDE.js驱动。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<h2 id="什么是-Hexo？"><a href="#什么是-Hexo？" class="headerlink" title="什么是 Hexo？"></a>什么是 Hexo？</h2><p>​       Hexo一个快速、简单、强大的博客框架，由NoDE.js驱动。Hexo 使用 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <h2 id="Hexo-相关链接："><a href="#Hexo-相关链接：" class="headerlink" title="Hexo 相关链接："></a>Hexo 相关链接：</h2><ul>
 <li><p>Hexo <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">GitHub</a></p>
 </li>
@@ -216,7 +215,7 @@
   <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
   <div class="random-toc">
     <h2>目录</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-相关链接："><span class="toc-text">Hexo 相关链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-Hexo？"><span class="toc-text">如何使用 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换-Hexo-主题"><span class="toc-text">更换 Hexo 主题</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Hexo？"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-相关链接："><span class="toc-text">Hexo 相关链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-Hexo？"><span class="toc-text">如何使用 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换-Hexo-主题"><span class="toc-text">更换 Hexo 主题</span></a></li></ol>
   </div>
 </div>
 
@@ -240,6 +239,22 @@
       
     </div>
   </div>
+
+  <div id="container"></div>
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+  <script>
+  var gitment = new Gitment({
+    id: 'location.href', // 可选。默认为 location.href    评论留言
+    owner: 'SmallRedSister',
+    repo: 'https://github.com/SmallRedSister/SmallRedSister.github.io',
+    oauth: {
+      client_id: 'df6608e5d308f152d01e',
+      client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+    },
+  })
+  gitment.render('container')
+  </script>
 
   <div id="bottom-outer">
     <div id="bottom-inner">
