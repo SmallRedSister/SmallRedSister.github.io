@@ -51,6 +51,15 @@ G...">
 <body>
 <div class="side-navigate hide-area">
   
+    <div class="item prev">
+      <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        GitHub Pages+hexo搭建个人博客全教程之Hexo
+      </div>
+    </div>
+  
   
     <div class="item next">
       <a href="/2018/07/08/hello-world/">
@@ -136,7 +145,7 @@ G...">
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2018-07-10</span>
       
-        <span id = "post-title-updated">修改于 2018-07-11</span>
+        <span id = "post-title-updated">修改于 2018-07-12</span>
       
       
       <span id = "post-title-categories">分类
@@ -251,16 +260,16 @@ G...">
 <p>找到一个你想放入项目磁盘文件中右击选中Git Bash Here, git clone 你的GitHub仓库路径，后面加上.git。例如我的：</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span>  https://github.com/SmallRedSister/SmallRedSister.github.io.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span>  https://github.com/SmallRedSister/SmallRedSister.github.io.git</span><br></pre></td></tr></table></figure>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/ae31682a40662e6e80f95260dc02b128.gif" alt=""></p>
 <p>  你会在你的文件中看到名为README文件，其中文件名是你的仓库路径名。</p>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/11/49dbb74040a727e2807558aa91633f8a.png" alt=""></p>
 <p>  第二步：上传HTML文件，如果你的前端可以的话，自己写然后上传。在你clone下的文件夹下（SmallRedSister.github.io）新建index.html文件，内容你可以自己写，也可以用下面我提供的代码作为测试。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;html&gt; </span><br><span class="line">&lt;body&gt; &lt;h1&gt;这是我使用github pages搭建的个人站点。&lt;/h1&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <p>  接下来我们提交文件，在空白处右击选中Git Bash Here，依次输入如下代码，</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .    //这个写好之后，按回车键再输入git commit -m <span class="string">"首次提交"</span>命令</span><br><span class="line">git commit -m <span class="string">"首次提交"</span>   //这个写好之后，按回车键再输入git push命令</span><br><span class="line">it push    //写好按回车键</span><br><span class="line">最后会提示你输入GitHub用户名和密码。</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git add .    //这个写好之后，按回车键再输入git commit -m <span class="string">"首次提交"</span>命令</span><br><span class="line">$ git commit -m <span class="string">"首次提交"</span>   //这个写好之后，按回车键再输入git push命令</span><br><span class="line">$ it push    //写好按回车键</span><br><span class="line">  最后会提示你输入GitHub用户名和密码。</span><br></pre></td></tr></table></figure>
 <p>  更新成功之后，你的个人博客网站算是有一点苗头了，你可以在浏览器输入你的GitHub仓库路径看效果。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://SmallRedSister.github.io    //这是我的，请输入你的好吧</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://SmallRedSister.github.io    //这是我的，请输入你的好吧</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>添加CNAME文件</p>
 <p>添加CNAME文件是让你的GitHub仓库路径绑定你的域名，下次你搜索仓库路径时会自动跳到你的域名。</p>
@@ -292,9 +301,9 @@ G...">
 <p>安全起见，为了你的git和GitHub更好的通信链接，需要加入SSH Keys（密钥）。如果你不是第一次安装Git，那么检查一下是否已经存在SSH密钥，输入以下代码：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/. ssh <span class="comment">#检查本机已存在的ssh密钥</span></span><br></pre></td></tr></table></figure>
 <p>如果提示：No such file or directory 说明没有。那生成新的 SSH Key吧！输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"你注册GitHub时使用的邮件地址"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你注册GitHub时使用的邮件地址"</span></span><br></pre></td></tr></table></figure>
 <p>然后会有提示：按回车就好，按一次没提示你输入密码的话，再连续按两次。总的按三次。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/Users/your_user_directory/.ssh/id_rsa): &lt;回车就好&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/Mechrev/.ssh/id_rsa):</span><br><span class="line">Created directory <span class="string">'/c/Users/Mechrev/.ssh'</span>.</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/Mechrev/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/Mechrev/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:N3jVp9idNT3d1ipQMoOXbzpo5S6isMcsBpT3+NUSHHs MECHREV2018Z2@DESKTOP-JGL7KE2</span><br><span class="line">The key<span class="string">'s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 2048]----+</span></span><br><span class="line"><span class="string">|         .+..    |</span></span><br><span class="line"><span class="string">|       .. o= .  =|</span></span><br><span class="line"><span class="string">|  .   . o.... .oO|</span></span><br><span class="line"><span class="string">| o .   + E.ooo *=|</span></span><br><span class="line"><span class="string">|. . o   S++oo +..|</span></span><br><span class="line"><span class="string">|.  . . oo++. .   |</span></span><br><span class="line"><span class="string">| ..o. .... .     |</span></span><br><span class="line"><span class="string">|  oo+.. . .      |</span></span><br><span class="line"><span class="string">| ..o.. . .       |</span></span><br><span class="line"><span class="string">+----[SHA256]-----+    &lt;回车就好&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Git会弹出一个对话框，让你输入GitHub的密码。之后会在用户目录下生成一个.ssh文件，打开本地 id_rsa.pub 文件，此文件里面内容为刚才生成的密钥，复制里面的全部内容。然后点击GitHub头像—&gt;settings—&gt;SSH and GPG keys—&gt;new SSH key—-&gt;Title（随便填一个名字）—&gt;Key（复制SSH密钥进去）—&gt;Add SSH key。</p>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/10/0b9850fc404ff9f980815d2787c8f612.gif" alt="配置SSH密钥"></p>
 <h3 id="Sublime-Text-3"><a href="#Sublime-Text-3" class="headerlink" title="Sublime Text 3"></a>Sublime Text 3</h3><p>神器不多说，谁用谁知道。<a href="http://www.sublimetext.com/" target="_blank" rel="noopener">Sublime Text官网</a> ，如果你已经拥用请跳过。进官网之后点Download，</p>
@@ -347,6 +356,8 @@ G...">
 
   
 <nav id="pagination">
+  
+    <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/" class="prev">&larr; 上一篇 GitHub Pages+hexo搭建个人博客全教程之Hexo</a>
   
 
   
@@ -512,19 +523,23 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/838b99ab40b2c919807ab03f9603d24e.jpg?imageView2/1/w/__width__/h/__height__');
     
-      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/3da0894b408ad99580d1b3c85422aae4.jpg?imageView2/1/w/__width__/h/__height__');
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/e030e5a440c5410d808b655f3e53172d.jpg?imageView2/1/w/__width__/h/__height__');
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/13d6077e4073529f80181764ba1ec7cb.jpg?imageView2/1/w/__width__/h/__height__');
     
-      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/b99a092640435f3480bf0fb260a9985a.jpg?imageView2/1/w/__width__/h/__height__');
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/825e0e6740f3963d80c131acdc4849a5.jpg?imageView2/1/w/__width__/h/__height__');
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/fcd53a6540f94dcd804cde42c79b15ce.jpg?imageView2/1/w/__width__/h/__height__');
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/992bf1854056db8980f55aef3713099f.jpg?imageView2/1/w/__width__/h/__height__');
     
-      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/acfc7374402016a3805c60ff373b866b.jpg?imageView2/1/w/__width__/h/__height__');
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/4687ddb740f135f7802c5ae2c7d62db3.jpg?imageView2/1/w/__width__/h/__height__');
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/07014b0f40e5169980dd2893731e37aa.jpg?imageView2/1/w/__width__/h/__height__');
+    
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/a5ec1d1340151e088033026542c1e897.jpg?imageView2/1/w/__width__/h/__height__');
+    
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/12/dcf44fca409852ce8056878d1a6f8706.jpg?imageView2/1/w/__width__/h/__height__');
     
   
   $('#post').each(function(i){
