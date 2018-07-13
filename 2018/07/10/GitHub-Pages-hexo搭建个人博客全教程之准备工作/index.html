@@ -48,20 +48,6 @@ G...">
       })();
   </script>
 
-  <script>
-  (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-      }
-      else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-  </script>
 
 </head>
 
@@ -186,7 +172,7 @@ G...">
       </span>
       
 
-      <span id="busuanzi_container_page_pv">阅读数量<span id="busuanzi_value_page_pv"></span>次</span>
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
 
     </p>
     
@@ -391,6 +377,8 @@ G...">
 
 <!-- JiaThis Button END -->
 
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=574566207&auto=1&height=66"></iframe>
 
   <div id="container"></div>
     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
@@ -598,7 +586,7 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/7853247d4028a39580ea62f4379a6c64.jpg?imageView2/1/w/__width__/h/__height__');
     
-      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/13/62491d7640e3f1b4805aa4948de25fc0.jpg?imageView2/1/w/__width__/h/__height__');
+      backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/08/8b93e788406fb10f802231e1cea1a0dc.jpg?imageView2/1/w/__width__/h/__height__');
     
       backgroundImages.push('http://bmob-cdn-20430.b0.upaiyun.com/2018/07/13/62491d7640e3f1b4805aa4948de25fc0.jpg?imageView2/1/w/__width__/h/__height__');
     
@@ -690,43 +678,3 @@ plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
 
-<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-    <script>
-        var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
-        var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
-        AV.init({
-            appId: APP_ID,
-            appKey: APP_KEY
-        });
-        // 显示次数
-        function showTime(Counter) {
-            var query = new AV.Query("Counter");
-            if($(".leancloud_visitors").length > 0){
-                var url = $(".leancloud_visitors").attr('id').trim();
-                // where field
-                query.equalTo("words", url);
-                // count
-                query.count().then(function (number) {
-                    // There are number instances of MyClass where words equals url.
-                    $(document.getElementById(url)).text(number?  number : '--');
-                }, function (error) {
-                    // error is an instance of AVError.
-                });
-            }
-        }
-        // 追加pv
-        function addCount(Counter) {
-            var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
-            var Counter = AV.Object.extend("Counter");
-            var query = new Counter;
-            query.save({
-                words: url
-            }).then(function (object) {
-            })
-        }
-        $(function () {
-            var Counter = AV.Object.extend("Counter");
-            addCount(Counter);
-            showTime(Counter);
-        });
-    </script>
