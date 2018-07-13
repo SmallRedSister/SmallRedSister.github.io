@@ -160,23 +160,6 @@
   </div>
 
   <div id="bottom-outer">
-
-  <div id="container"></div>
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-  <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-  <script>
-  var gitment = new Gitment({
-    id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
-    owner: 'SmallRedSister',
-    repo: 'SmallRedSister.github.io',
-    oauth: {
-      client_id: 'df6608e5d308f152d01e',
-      client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
-    },
-  })
-  gitment.render('container')
-  </script>
-
     <div id="bottom-inner">
       Site by SmallRedSister using
       <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
@@ -202,6 +185,50 @@
         } 
     setInterval("createtime()",250);
     </script>
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+<script>
+    var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
+    var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    // 显示次数
+    function showTime(Counter) {
+        var query = new AV.Query("Counter");
+        if($(".leancloud_visitors").length > 0){
+            var url = $(".leancloud_visitors").attr('id').trim();
+            // where field
+            query.equalTo("words", url);
+            // count
+            query.count().then(function (number) {
+                // There are number instances of MyClass where words equals url.
+                $(document.getElementById(url)).text(number?  number : '--');
+            }, function (error) {
+                // error is an instance of AVError.
+            });
+        }
+    }
+    // 追加pv
+    function addCount(Counter) {
+        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+        var Counter = AV.Object.extend("Counter");
+        var query = new Counter;
+        query.save({
+            words: url
+        }).then(function (object) {
+        })
+    }
+    $(function () {
+        var Counter = AV.Object.extend("Counter");
+        addCount(Counter);
+        showTime(Counter);
+    });
+</script>
 
   </div>
 
@@ -404,47 +431,4 @@ plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-
-<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-<script>
-    var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
-    var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
-    AV.init({
-        appId: APP_ID,
-        appKey: APP_KEY
-    });
-    // 显示次数
-    function showTime(Counter) {
-        var query = new AV.Query("Counter");
-        if($(".leancloud_visitors").length > 0){
-            var url = $(".leancloud_visitors").attr('id').trim();
-            // where field
-            query.equalTo("words", url);
-            // count
-            query.count().then(function (number) {
-                // There are number instances of MyClass where words equals url.
-                $(document.getElementById(url)).text(number?  number : '--');
-            }, function (error) {
-                // error is an instance of AVError.
-            });
-        }
-    }
-    // 追加pv
-    function addCount(Counter) {
-        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
-        var Counter = AV.Object.extend("Counter");
-        var query = new Counter;
-        query.save({
-            words: url
-        }).then(function (object) {
-        })
-    }
-    $(function () {
-        var Counter = AV.Object.extend("Counter");
-        addCount(Counter);
-        showTime(Counter);
-    });
-</script>
 
