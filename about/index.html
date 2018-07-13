@@ -131,6 +131,7 @@
       <h2 id="这是个人博客网站，非商业用途！"><a href="#这是个人博客网站，非商业用途！" class="headerlink" title="这是个人博客网站，非商业用途！"></a>这是个人博客网站，非商业用途！</h2><h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h3><p>本站在不断更新，后面会陆续加入评论留言、打赏、网易音乐、相册、简历等等功能。</p>
 <p>如果有什么话想对我说，请往下看如何联系我；如果是对我的写的博文有什么好的建议或者意见，<br>可以到[<a href="https://blog.csdn.net/L_201607" target="_blank" rel="noopener">CSDN</a>]相应的博文下留言（个人网站博客和CSDN博客将同步更新），</p>
 <p>在每个页面的左下角，都有个Hide 按钮，点击这个按钮之后，按钮之外的东西都会被隐藏，只看到背景轮播图。<br>在每个页面的右下角，都有一个卡通人物，她的眼睛会跟随你的鼠标箭头方向，点击人物任何地方，每点一次人物会说一句话(可以和她玩耍，我允许了)。</p>
+<h3 id="网站需要改进的地方"><a href="#网站需要改进的地方" class="headerlink" title="网站需要改进的地方"></a>网站需要改进的地方</h3><p>打赏功能，评论、文章阅读量、网站访问量、了解模板引擎、添加百度SEO</p>
 <h3 id="如何联系我："><a href="#如何联系我：" class="headerlink" title="如何联系我："></a>如何联系我：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">QQ：2844862119 （我喜欢你整整一个曾经）</span><br><span class="line">微信：XHM2279833535 （小红妹）</span><br><span class="line">E-mail：L2279833535@163.com</span><br></pre></td></tr></table></figure>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/10/c3879675409405448012bb9f1a723823.jpg" alt="QQ"></p>
 <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/10/88526b9d4081c9eb80b4971efb2276b0.jpg" alt="微信"></p>
@@ -155,8 +156,6 @@
       
       
     </div>
-
-    阅读数量:<span id="<%= url_for(post.path) %>" class="leancloud_visitors" data-flag-title="<%- post.title %>"></span>次 
   </div>
 
   <div id="bottom-outer">
@@ -167,7 +166,7 @@
       
     </div>
     
-    @2018  
+    @2018  |
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
@@ -185,50 +184,50 @@
         } 
     setInterval("createtime()",250);
     </script>
-
+    |
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
-<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-<script>
-    var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
-    var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
-    AV.init({
-        appId: APP_ID,
-        appKey: APP_KEY
-    });
-    // 显示次数
-    function showTime(Counter) {
-        var query = new AV.Query("Counter");
-        if($(".leancloud_visitors").length > 0){
-            var url = $(".leancloud_visitors").attr('id').trim();
-            // where field
-            query.equalTo("words", url);
-            // count
-            query.count().then(function (number) {
-                // There are number instances of MyClass where words equals url.
-                $(document.getElementById(url)).text(number?  number : '--');
-            }, function (error) {
-                // error is an instance of AVError.
-            });
+    <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+    <script>
+        var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
+        var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
+        AV.init({
+            appId: APP_ID,
+            appKey: APP_KEY
+        });
+        // 显示次数
+        function showTime(Counter) {
+            var query = new AV.Query("Counter");
+            if($(".leancloud_visitors").length > 0){
+                var url = $(".leancloud_visitors").attr('id').trim();
+                // where field
+                query.equalTo("words", url);
+                // count
+                query.count().then(function (number) {
+                    // There are number instances of MyClass where words equals url.
+                    $(document.getElementById(url)).text(number?  number : '--');
+                }, function (error) {
+                    // error is an instance of AVError.
+                });
+            }
         }
-    }
-    // 追加pv
-    function addCount(Counter) {
-        var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
-        var Counter = AV.Object.extend("Counter");
-        var query = new Counter;
-        query.save({
-            words: url
-        }).then(function (object) {
-        })
-    }
-    $(function () {
-        var Counter = AV.Object.extend("Counter");
-        addCount(Counter);
-        showTime(Counter);
-    });
-</script>
+        // 追加pv
+        function addCount(Counter) {
+            var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+            var Counter = AV.Object.extend("Counter");
+            var query = new Counter;
+            query.save({
+                words: url
+            }).then(function (object) {
+            })
+        }
+        $(function () {
+            var Counter = AV.Object.extend("Counter");
+            addCount(Counter);
+            showTime(Counter);
+        });
+    </script>
 
   </div>
 
@@ -431,4 +430,43 @@ plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
 
-
+<script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
+    <script>
+        var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
+        var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
+        AV.init({
+            appId: APP_ID,
+            appKey: APP_KEY
+        });
+        // 显示次数
+        function showTime(Counter) {
+            var query = new AV.Query("Counter");
+            if($(".leancloud_visitors").length > 0){
+                var url = $(".leancloud_visitors").attr('id').trim();
+                // where field
+                query.equalTo("words", url);
+                // count
+                query.count().then(function (number) {
+                    // There are number instances of MyClass where words equals url.
+                    $(document.getElementById(url)).text(number?  number : '--');
+                }, function (error) {
+                    // error is an instance of AVError.
+                });
+            }
+        }
+        // 追加pv
+        function addCount(Counter) {
+            var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
+            var Counter = AV.Object.extend("Counter");
+            var query = new Counter;
+            query.save({
+                words: url
+            }).then(function (object) {
+            })
+        }
+        $(function () {
+            var Counter = AV.Object.extend("Counter");
+            addCount(Counter);
+            showTime(Counter);
+        });
+    </script>
