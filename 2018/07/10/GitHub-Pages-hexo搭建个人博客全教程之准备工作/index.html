@@ -396,6 +396,20 @@ G...">
     gitment.render('container')
     </script>
 
+    <link rel="stylesheet" href="APlayer.min.css">
+    <div id="aplayer"></div>
+    <script src="APlayer.min.js"></script>
+
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      audio: [{
+          name: '若能绽放光芒',
+          artist: 'artist',
+          url: 'http://devtest.qiniudn.com/若能绽放光芒.mp4',
+          cover: 'http://devtest.qiniudn.com/若能绽放光芒.png'
+      }]
+    });
+
 
       
       
