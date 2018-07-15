@@ -12,6 +12,37 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+<style>
+
+    .pace .pace-progress {
+
+        background: #1E92FB; /*进度条颜色*/
+
+        height: 3px;
+
+    }
+
+    .pace .pace-progress-inner {
+
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+
+    }
+
+    .pace .pace-activity {
+
+        border-top-color: #1E92FB;    /*上边框颜色*/
+
+        border-left-color: #1E92FB;    /*左边框颜色*/
+
+    }
+
+</style>
+
   
   <meta name="author" content="SmallRedSister">
   
@@ -45,6 +76,26 @@
       })();
   </script>
 
+
+  <script>
+
+      (function(){
+
+          if(''){
+
+              if (prompt('请输入文章密码') !== ''){
+
+                  alert('密码错误！');
+
+                  history.back();
+
+              }
+
+          }
+
+      })();
+
+  </script>
 
 </head>
 
@@ -137,60 +188,13 @@
         
           <a class="active" href="/categories/搭建个人博客/">搭建个人博客</a>
         
-          <span class="category-list-count">2</span>
+          <span class="category-list-count">1</span>
         </li>
       
     </ul>
     
       
       
-      
-    
-      
-      
-        
-          
-        
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/">
-  
-    GitHub Pages+hexo搭建个人博客全教程之Hexo
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-12</span>
-    
-    <span id = "post-title-categories">分类
-    
-    
-      
-      
-      <a href="/categories/搭建个人博客/">搭建个人博客</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    标签
-    
-    
-      
-      
-      <a href="/tags/Hexo/">Hexo</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
       
     
       
@@ -247,6 +251,8 @@
       
       
     </div>
+    <!-- 页面点击小红心 -->
+    <script type="text/javascript" src="/js/src/love.js"></script>
   </div>
 
   <div id="bottom-outer">
@@ -277,7 +283,15 @@
     </script>
     |
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_uv">本站总访问量<span id="busuanzi_value_site_uv"></span>次</span>
+    |
+
+    <div class="theme-info">
+
+      <div class="powered-by"></div>
+      <span class="post-count">博客全站共2.5k字</span>
+
+    </div>
 
   </div>
 
@@ -312,7 +326,7 @@
     <li>
       <a href="https://space.bilibili.com/96203578/#/">
         
-          bilibili
+          BiLiBiLi
         
       </a>
     </li>
@@ -432,7 +446,7 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
   });
   $(".fancybox").fancybox();
 
-var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":3000,"shuffle":true,"count":28};
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":3500,"shuffle":true,"count":28};
 var unsplashConfig = {"gravity":"north"};
 // is show background images
 var turnoffBackgroundImage = false;
