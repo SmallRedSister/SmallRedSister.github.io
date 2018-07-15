@@ -154,8 +154,6 @@ Qu...">
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-
-    <div id="container"></div>
   </article>
   <div class="random-toc-area">
   <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
@@ -184,7 +182,7 @@ Qu...">
 
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=574566207&auto=1&height=66"></iframe>
 
-
+    <div id="container"></div>
     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
     <script>
@@ -202,17 +200,20 @@ Qu...">
 
     <link rel="stylesheet" href="APlayer.min.css">
     <div id="aplayer"></div>
-    <script src="APlayer.min.js"></script>
+    <script src="APlayer.min.js">
 
-    const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      audio: [{
-          name: '若能绽放光芒',
-          artist: 'artist',
-          url: 'http://devtest.qiniudn.com/若能绽放光芒.mp4',
-          cover: 'http://devtest.qiniudn.com/若能绽放光芒.png'
-      }]
-    });
+      const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        audio: [{
+            name: '若能绽放光芒',
+            artist: 'artist',
+            url: 'http://devtest.qiniudn.com/若能绽放光芒.mp4',
+            cover: 'http://devtest.qiniudn.com/若能绽放光芒.png'
+        }]
+      });
+    </script>
+
+    
 
 
       
@@ -249,47 +250,6 @@ Qu...">
     |
     <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-
-    <script src="//cdn1.lncld.net/static/js/2.5.0/av-min.js"></script>
-    <script>
-        var APP_ID = 'g33y8IV104YTC2zeSVNFyWtQ';
-        var APP_KEY = 'uhVPI5QYfARQaIi2pk0vcoK1';
-        AV.init({
-            appId: APP_ID,
-            appKey: APP_KEY
-        });
-        // 显示次数
-        function showTime(Counter) {
-            var query = new AV.Query("Counter");
-            if($(".leancloud_visitors").length > 0){
-                var url = $(".leancloud_visitors").attr('id').trim();
-                // where field
-                query.equalTo("words", url);
-                // count
-                query.count().then(function (number) {
-                    // There are number instances of MyClass where words equals url.
-                    $(document.getElementById(url)).text(number?  number : '--');
-                }, function (error) {
-                    // error is an instance of AVError.
-                });
-            }
-        }
-        // 追加pv
-        function addCount(Counter) {
-            var url = $(".leancloud_visitors").length > 0 ? $(".leancloud_visitors").attr('id').trim() : 'icafebolger.com';
-            var Counter = AV.Object.extend("Counter");
-            var query = new Counter;
-            query.save({
-                words: url
-            }).then(function (object) {
-            })
-        }
-        $(function () {
-            var Counter = AV.Object.extend("Counter");
-            addCount(Counter);
-            showTime(Counter);
-        });
-    </script>
 
   </div>
 
