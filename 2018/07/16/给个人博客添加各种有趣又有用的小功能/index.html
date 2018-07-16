@@ -1,8 +1,6 @@
 
 
 
-  
-
 
 
 
@@ -38,7 +36,7 @@
   
     <meta name="description" content="小红妹个人技术博客网站">
   
-  <title>标签: Hexo [ 小红妹 ]</title>
+  <title>给个人博客添加各种有趣又有用的小功能 [ 小红妹 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -72,6 +70,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        GitHub Pages+hexo搭建个人博客全教程之Hexo
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -111,7 +118,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/tags">Tags</a>
             
@@ -143,73 +150,136 @@
     <div id="content-inner">
       
       
-  <div id="tag">
-    <h1>Hexo</h1>
+  <article id="post">
+    <h1>给个人博客添加各种有趣又有用的小功能</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2018-07-16</span>
+      
+        <span id = "post-title-updated">修改于 2018-07-16</span>
+      
+      
+      
+
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
+
+    </p>
     
-      
-      
+    
+
+    <div class="my_post_copyright">
+          <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+          <!-- JS库 sweetalert 可修改路径 -->
+          <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+          <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+          <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+          <p><span>本文标题:</span><a href="/2018/07/16/给个人博客添加各种有趣又有用的小功能/">给个人博客添加各种有趣又有用的小功能</a></p>
+          <p><span>文章作者:</span><a href="/" title="访问 SmallRedSister 的个人博客">SmallRedSister</a></p>
+          <p><span>发布时间:</span>2018年07月16日 - 17:07</p>
+          <p><span>最后更新:</span>2018年07月16日 - 17:07</p>
+          <p><span>原始链接:</span><a href="/2018/07/16/给个人博客添加各种有趣又有用的小功能/" title="给个人博客添加各种有趣又有用的小功能">https://liaichuan.top/2018/07/16/给个人博客添加各种有趣又有用的小功能/</a>
+            <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://liaichuan.top/2018/07/16/给个人博客添加各种有趣又有用的小功能/"  aria-label="复制成功！"></i></span>
+          </p>
+          <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+        </div>
+        <script> 
+            var clipboard = new Clipboard('.fa-clipboard');
+            clipboard.on('success', $(function(){
+              $(".fa-clipboard").click(function(){
+                swal({   
+                  title: "",   
+                  text: '复制成功',   
+                  html: false,
+                  timer: 500,   
+                  showConfirmButton: false
+                });
+              });
+            }));  
+        </script>
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+
         
-          
+           <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           喜欢文章就打赏一包辣条吧！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png)
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/b1be33f440b853398031437a9276fa90.png)
+         -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="<%- theme.root_url %><%=theme.Alipay%>"
+                <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
+        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/b1be33f440b853398031437a9276fa90.png" alt="微信打赏">
         
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/">
-  
-    GitHub Pages+hexo搭建个人博客全教程之Hexo
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-12</span>
-    
-    <span id = "post-title-categories">分类
-    
-    
-      
-      
-      <a href="/categories/搭建个人博客/">搭建个人博客</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    标签
-    
-    
-      
-      
-      <a href="/tags/Hexo/">Hexo</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
 </div>
-      
-    
-      
-      
+<! -- 添加捐赠图标 -->
+
         
-      
-      
-    
-      
-      
-      
-    
-      
-      
-      
+
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
     
   </div>
+</div>
 
   
+<nav id="pagination">
+  
+
+  
+
+  
+    <a href="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/" class="next">下一篇 GitHub Pages+hexo搭建个人博客全教程之Hexo &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
+      owner: 'SmallRedSister',
+      repo: 'SmallRedSister.github.io',
+      oauth: {
+        client_id: 'df6608e5d308f152d01e',
+        client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+      },
+    })
+    gitment.render('container')
+    </script>
 
 
       
@@ -412,6 +482,8 @@
   var turnoffBackgroundImage = false;
   
   
+  
+    turnoffBackgroundImage = true;
   
 
   var backgroundColor = "34495E";

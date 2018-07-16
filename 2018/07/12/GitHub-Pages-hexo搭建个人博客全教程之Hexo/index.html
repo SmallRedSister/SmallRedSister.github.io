@@ -70,6 +70,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+    <div class="item prev">
+      <a href="/2018/07/16/给个人博客添加各种有趣又有用的小功能/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        给个人博客添加各种有趣又有用的小功能
+      </div>
+    </div>
+  
   
     <div class="item next">
       <a href="/2018/07/10/GitHub-Pages-hexo搭建个人博客全教程之准备工作/">
@@ -232,7 +241,7 @@
 <p>总结：全篇命令是使用Git完成，凡是有修改主配置文件_config.yml是使用Sublime Text 3 打开。</p>
 <p>下一篇我们说 ： 给个人博客网站添加评论、有趣又实用的功能。</p>
 <p>喜欢文章就打赏一包辣条吧！</p>
-<p><img src="D:\Personal Data\QQ图片20180713145545.png" alt=""></p>
+<p><img src="/2018/07/12/GitHub-Pages-hexo搭建个人博客全教程之Hexo/D:/Personal Data\QQ图片20180713145545.png" alt=""></p>
 
 
     <div class="my_post_copyright">
@@ -274,7 +283,7 @@
         <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
         <span class="donate_txt">
            ↑<br>
-           <%=theme.donate_message%>
+           喜欢文章就打赏一包辣条吧！
         </span>
         <br>
       </div>  
@@ -291,12 +300,11 @@
                 <img src="<%- theme.root_url %><%=theme.Alipay%>"
                 <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
         -->
-        <!-- 支付宝打赏图案
-        <img src="<%- theme.root_url %>/img/Alipay.jpg" alt="支付宝打赏"> 
-        -->
-        <!-- 微信打赏图案 
-        <img src="<%- theme.root_url %>/img/WeChatpay.jpg" alt="微信打赏">
-        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/b1be33f440b853398031437a9276fa90.png" alt="微信打赏">
+        
     </div>
     <script type="text/javascript">
         document.getElementById('btn_donate').onclick = function(){
@@ -321,6 +329,8 @@
 
   
 <nav id="pagination">
+  
+    <a href="/2018/07/16/给个人博客添加各种有趣又有用的小功能/" class="prev">&larr; 上一篇 给个人博客添加各种有趣又有用的小功能</a>
   
 
   
@@ -369,7 +379,6 @@
       
     </div>
 
-    
     @2018  |
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
@@ -393,8 +402,6 @@
     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
   </div>
-
-</div>
 
 </div>
 
@@ -495,8 +502,6 @@
       <script src="/js/jquery.fancybox-thumbs.js"></script>
     
       <script src="/js/plyr.js"></script>
-    
-      <script src="/js/love.js"></script>
     
       <script src="/js/fireworks.js"></script>
     
@@ -599,14 +604,13 @@
     $(this).parent().html(plyrContainer);
   });
   plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
-  </script>
-  <!-- 页面点击小红心 -->
-  <script type="text/javascript" src="/js/love.js"></script>
 
   
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/fireworks.js"></script>
+  </script>
+  
 
 <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
 </html>
