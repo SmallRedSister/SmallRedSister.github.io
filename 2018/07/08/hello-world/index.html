@@ -156,7 +156,34 @@ Qu...">
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+    
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2018/07/10/GitHub-Pages-hexo搭建个人博客全教程之准备工作/" class="prev">&larr; 上一篇 GitHub Pages+hexo搭建个人博客全教程之准备工作</a>
+  
+
+  
+
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
 
     
         <! -- 添加捐赠图标 -->
@@ -214,31 +241,6 @@ Qu...">
     })
     gitment.render('container_gitment')
     </script>
-  </article>
-  <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
-  <div class="random-toc">
-    <h2>目录</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-  </div>
-</div>
-
-  
-<nav id="pagination">
-  
-    <a href="/2018/07/10/GitHub-Pages-hexo搭建个人博客全教程之准备工作/" class="prev">&larr; 上一篇 GitHub Pages+hexo搭建个人博客全教程之准备工作</a>
-  
-
-  
-
-  
-</nav>
-
-  <!-- JiaThis Button BEGIN -->
-
-<!-- JiaThis Button END -->
-
 
       
       
@@ -256,7 +258,7 @@ Qu...">
       <br>
       
     </div>
-    @2018  |
+    <span>@2018 |</span>
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
@@ -265,10 +267,10 @@ Qu...">
             now.setTime(now.getTime()+250); 
             days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
             hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            if(String(hnum).length == 1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length == 1 ){mnum = "0" + mnum;} 
             seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            snum = Math.round(seconds); if(String(snum).length == 1 ){snum = "0" + snum;} 
             document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
             document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒|"; 
         } 

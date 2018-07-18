@@ -224,7 +224,36 @@
 <p>喜欢文章就打赏一包辣条吧！</p>
 <p><img src="D:\Personal Data\QQ图片20180713145545.png" alt=""></p>
 
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+    
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Hexo？"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-相关链接："><span class="toc-text">Hexo 相关链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-Hexo？"><span class="toc-text">如何使用 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换-Hexo-主题"><span class="toc-text">更换 Hexo 主题</span></a></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2018/07/16/Hexo博客添加各种有趣又有用的小功能/" class="prev">&larr; 上一篇 给个人博客添加各种有趣又有用的小功能</a>
+  
+
+  
+
+  
+    <a href="/2018/07/10/GitHub-Pages-hexo搭建个人博客全教程之准备工作/" class="next">下一篇 GitHub Pages+hexo搭建个人博客全教程之准备工作 &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
 
     
         <! -- 添加捐赠图标 -->
@@ -282,33 +311,6 @@
     })
     gitment.render('container_gitment')
     </script>
-  </article>
-  <div class="random-toc-area">
-  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
-  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
-  <div class="random-toc">
-    <h2>目录</h2>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是-Hexo？"><span class="toc-text">什么是 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-相关链接："><span class="toc-text">Hexo 相关链接：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何使用-Hexo？"><span class="toc-text">如何使用 Hexo？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更换-Hexo-主题"><span class="toc-text">更换 Hexo 主题</span></a></li></ol>
-  </div>
-</div>
-
-  
-<nav id="pagination">
-  
-    <a href="/2018/07/16/Hexo博客添加各种有趣又有用的小功能/" class="prev">&larr; 上一篇 给个人博客添加各种有趣又有用的小功能</a>
-  
-
-  
-
-  
-    <a href="/2018/07/10/GitHub-Pages-hexo搭建个人博客全教程之准备工作/" class="next">下一篇 GitHub Pages+hexo搭建个人博客全教程之准备工作 &rarr;</a>
-  
-</nav>
-
-  <!-- JiaThis Button BEGIN -->
-
-<!-- JiaThis Button END -->
-
 
       
       
@@ -326,7 +328,7 @@
       <br>
       
     </div>
-    @2018  |
+    <span>@2018 |</span>
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
@@ -335,10 +337,10 @@
             now.setTime(now.getTime()+250); 
             days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
             hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            if(String(hnum).length == 1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length == 1 ){mnum = "0" + mnum;} 
             seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            snum = Math.round(seconds); if(String(snum).length == 1 ){snum = "0" + snum;} 
             document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
             document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒|"; 
         } 

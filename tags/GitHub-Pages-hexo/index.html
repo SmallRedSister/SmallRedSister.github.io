@@ -132,6 +132,12 @@
       
       
         
+      
+      
+    
+      
+      
+        
           
         
       
@@ -243,12 +249,6 @@
       
       
         
-      
-      
-    
-      
-      
-        
           
         
       
@@ -274,6 +274,15 @@
   </a>
   <p class="page-title-sub">
     <span id = "post-title-date">7-16</span>
+    
+    <span id = "post-title-categories">分类
+    
+    
+      
+      
+      <a href="/categories/搭建个人博客/">搭建个人博客</a>
+    
+    </span>
     
     
     <span id = "post-title-tags">
@@ -340,6 +349,8 @@
       
         
       
+        
+      
       
     
   </div>
@@ -362,7 +373,7 @@
       <br>
       
     </div>
-    @2018  |
+    <span>@2018 |</span>
     <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
     <script>
         var now = new Date(); 
@@ -371,10 +382,10 @@
             now.setTime(now.getTime()+250); 
             days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
             hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            if(String(hnum).length == 1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length == 1 ){mnum = "0" + mnum;} 
             seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            snum = Math.round(seconds); if(String(snum).length == 1 ){snum = "0" + snum;} 
             document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
             document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒|"; 
         } 
