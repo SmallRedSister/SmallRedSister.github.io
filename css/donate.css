@@ -32,16 +32,17 @@
 } 
 
 .post-donate{ 
-	margin-top: 55px; 
+	margin-top: 75px; 
+	margin-bottom: 8px;
 }
 
 #donate_guide{ 
-	height: 310px; 
-	width: 500px; 
+	height: 380px; 
+	width: 100%; 
 	margin: 0 auto; 
 } 
 
 #donate_guide img{ 
-	height: 350px; 
-	height: 350px; 
+	height: 380px; 
+	height: 380px; 
 }
