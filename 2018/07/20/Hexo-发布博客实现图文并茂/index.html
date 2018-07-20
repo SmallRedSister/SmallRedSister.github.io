@@ -1,8 +1,6 @@
 
 
 
-  
-
 
 
 
@@ -33,9 +31,10 @@
   
   
   
-    <meta name="description" content="小红妹个人技术博客网站">
+    <meta name="description" content="写在前面​       网站搭建起来了，也装饰好，一切妥当，只欠东风（充实内容啊）；单有躯壳是不行的，还需要灵魂。没说错的话，估计我又开始废话了。这篇我们主要解决两个问题，1.使用什么工具写博客，2.博客中插入图片问题，
+Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或者还没安装Typora请看我的上一篇博客，程序员必备神器（Typora）。你也可以使用S...">
   
-  <title>标签: 评论 [ 小红妹 ]</title>
+  <title>Hexo 发布博客实现图文并茂 [ 小红妹 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -55,6 +54,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2018/07/18/程序员必备神器（Typora）/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        程序员必备神器（Typora）
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -94,7 +102,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/tags">Tags</a>
             
@@ -119,159 +127,151 @@
     <div id="content-inner">
       
       
-  <div id="tag">
-    <h1>评论</h1>
-    
+  <article id="post">
+    <h1>Hexo 发布博客实现图文并茂</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2018-07-20</span>
+      
+        <span id = "post-title-updated">修改于 2018-07-20</span>
+      
+      
+      <span id = "post-title-categories">分类
       
       
         
-      
         
+        <a href="/categories/搭建个人博客/">搭建个人博客</a>
       
-        
-      
-      
-    
+      </span>
       
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      
-    
+      <span id = "post-title-tags">
+      标签
       
       
         
+        
+        <a href="/tags/Hexo/">Hexo</a>
       
         
-      
-      
-    
-      
+          /
+        
+        
+        <a href="/tags/Bmob/">Bmob</a>
       
         
-      
-      
-    
-      
-      
-      
-    
-      
-      
+          /
         
-      
         
+        <a href="/tags/Typora/">Typora</a>
       
-        
+      </span>
       
-        
-      
-        
-          
-        
-      
-        
-      
-        
-      
-      
-      <div class="post-title-item">
-  
-  <a href="/2018/07/16/Hexo博客添加各种有趣又有用的小功能/">
-  
-    给个人博客添加各种有趣又有用的小功能
-  
-  </a>
-  <p class="page-title-sub">
-    <span id = "post-title-date">7-16</span>
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
     
-    <span id = "post-title-categories">分类
+    <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/13/baa79f934052c05380c9a6246138655b.jpg" alt="福利"></p>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>​       网站搭建起来了，也装饰好，一切妥当，只欠东风（充实内容啊）；单有躯壳是不行的，还需要灵魂。没说错的话，估计我又开始废话了。这篇我们主要解决两个问题，1.使用什么工具写博客，2.博客中插入图片问题，</p>
+<h2 id="Hexo-编写博客工具"><a href="#Hexo-编写博客工具" class="headerlink" title="Hexo 编写博客工具"></a>Hexo 编写博客工具</h2><p>​       工具推荐使用Typora，不知道Typora或者还没安装Typora请看我的上一篇博客，<a href="https://liaichuan.top/2018/07/18/程序员必备神器%EF%BC%88Typora%EF%BC%89/">程序员必备神器（Typora）</a>。你也可以使用Sublime Text 3 来写，Sublime Text 3 写的话需要写MD语法。我是两者一起配合使用😁。</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/a3c170aa4073ec828053683170992e09.png" alt=""></p>
+<h2 id="Hexo-在博文中插入图片"><a href="#Hexo-在博文中插入图片" class="headerlink" title="Hexo 在博文中插入图片"></a>Hexo 在博文中插入图片</h2><ul>
+<li>插入本地图片</li>
+<li>插入有链接的图片 </li>
+</ul>
+<h3 id="插入本地图片"><a href="#插入本地图片" class="headerlink" title="插入本地图片"></a>插入本地图片</h3><p>插入本地图片需要修改主题<code>_config.yml</code>配置文件<code>post_asset_folder</code>项为<code>true</code>。</p>
+<p>使用插件达到插入本地图片，在根目录输入如下命令安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>今后你new 一篇博客时<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹，把图片放到里面即可.</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/d6bfd2a040c487af8072834dfa4d3388.png" alt=""></p>
+<p>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<code>![你想输入的替代文字](xxxx/图片名.jpg)</code></p>
+<h3 id="插入有链接的图片"><a href="#插入有链接的图片" class="headerlink" title="插入有链接的图片"></a>插入有链接的图片</h3><p>​      考虑到本地存放图片图片，一占用电脑内存，二来博客项目过于膨大，想一下，一篇博客三四张图片，10篇20篇以后呢?所以我们不能只有一种对策方法，凡事都有三种对策方法才行。当然了，本地图片也有好处，存放更换频繁的、重要的、隐私的图片最佳选择。使用第三方平台保存图片的话，推荐使用<a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a>和<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a>+MPic，我只讲Bmob。Bmob对于个人有应用来说再好不过，一个月有20G免费存储空间。</p>
+<p>Bmob先注册一个好号，然后创建一个应用，最后上传素材获取图片链接。功能很强大，用一次就知道了哈，</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/9c71c8ed409f584480bff9bb9f115208.gif" alt=""></p>
+
     
-    
-      
-      
-      <a href="/categories/搭建个人博客/">搭建个人博客</a>
-    
-    </span>
-    
-    
-    <span id = "post-title-tags">
-    标签
-    
-    
-      
-      
-      <a href="/tags/GitHub-Pages-hexo/">GitHub Pages+hexo</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/Gitment/">Gitment</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/APlayer/">APlayer</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/DPlayer/">DPlayer</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/评论/">评论</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/打赏/">打赏</a>
-    
-      
-        /
-      
-      
-      <a href="/tags/妹子/">妹子</a>
-    
-    </span>
-    
-    
-      <br>
-      
-      
-    
-  </p>
-  
-</div>
-      
-    
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#写在前面"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-编写博客工具"><span class="toc-text">Hexo 编写博客工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-在博文中插入图片"><span class="toc-text">Hexo 在博文中插入图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#插入本地图片"><span class="toc-text">插入本地图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插入有链接的图片"><span class="toc-text">插入有链接的图片</span></a></li></ol></li></ol>
   </div>
-
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=574566207&auto=1&height=66"></iframe>
+</div>
 
   
+<nav id="pagination">
+  
+
+  
+
+  
+    <a href="/2018/07/18/程序员必备神器（Typora）/" class="next">下一篇 程序员必备神器（Typora） &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+  
+      <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           喜欢文章就打赏一包辣条吧！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png)
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/b1be33f440b853398031437a9276fa90.png)
+         -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="<%- theme.root_url %><%=theme.Alipay%>"
+                <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
+        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/18/eab5047440cd874780e4ea4c3653830c.gif" alt="微信打赏">
+        
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+  
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+
+    <div id="container_gitment"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
+      owner: 'SmallRedSister',
+      repo: 'SmallRedSister.github.io',
+      oauth: {
+        client_id: 'df6608e5d308f152d01e',
+        client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+      },
+    })
+    gitment.render('container_gitment')
+    </script>
 
       
       
@@ -476,6 +476,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "363B40";
