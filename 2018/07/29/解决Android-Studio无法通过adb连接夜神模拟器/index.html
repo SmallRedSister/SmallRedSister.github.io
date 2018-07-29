@@ -31,10 +31,12 @@
   
   
   
-    <meta name="description" content="这是个人博客网站，非商业用途！说明：在每个页面的左下角，都有个Hide 按钮，点击这个按钮之后，按钮之外的东西都会被隐藏，只看到背景轮播图。在每个页面的右下角，都有一个卡通人物，她的眼睛会跟随你的鼠标箭头方向，点击人物任何地方，每点一次人物会说一句话(可以和她玩耍，我允许了)。
-网站需要改进的地方打赏功能（ok，打赏图标有时候没显示出来），评论(OK)、文章阅读量（OK）、网站访问量（OK）...">
+    <meta name="description" content="cmd命令先启动夜神模拟器，然后运行cmd（开始建+R），执行命令：
+F:\Nox\Nox\bin\nox_adb.exe connect 127.0.0.1:62001 
+说明：夜神模拟器安装路径+nox_adb.exe connect 127.0.0.1:62001 ，
+你可以cd到夜神安装目录，然后执行命令：nox_adb.exe connect 127.0.0.1:62001 连接到...">
   
-  <title>about [ 小红妹 ]</title>
+  <title>解决Android Studio无法通过adb连接夜神模拟器 [ 小红妹 ]</title>
   
   
     <link rel="shortcut icon" href="/favicon.ico">
@@ -54,6 +56,15 @@
 <body>
 <div class="side-navigate hide-area">
   
+  
+    <div class="item next">
+      <a href="/2018/07/29/Connection-timed-out-connect/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Connection timed out:connect
+      </div>
+    </div>
   
 </div>
 <div id="outer-container" class="hide-area">
@@ -100,7 +111,7 @@
           </li>
         
           
-            <li class="active">
+            <li>
           
             <a href="/about">About</a>
             
@@ -118,20 +129,67 @@
     <div id="content-inner">
       
       
-  <article id="page">
-    
-    
-      <h1 class="">about</h1>
+  <article id="post">
+    <h1>解决Android Studio无法通过adb连接夜神模拟器</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2018-07-29</span>
       
-      <h2 id="这是个人博客网站，非商业用途！"><a href="#这是个人博客网站，非商业用途！" class="headerlink" title="这是个人博客网站，非商业用途！"></a>这是个人博客网站，非商业用途！</h2><h3 id="说明："><a href="#说明：" class="headerlink" title="说明："></a>说明：</h3><p>在每个页面的左下角，都有个Hide 按钮，点击这个按钮之后，按钮之外的东西都会被隐藏，只看到背景轮播图。<br>在每个页面的右下角，都有一个卡通人物，她的眼睛会跟随你的鼠标箭头方向，点击人物任何地方，每点一次人物会说一句话(可以和她玩耍，我允许了)。</p>
-<h3 id="网站需要改进的地方"><a href="#网站需要改进的地方" class="headerlink" title="网站需要改进的地方"></a>网站需要改进的地方</h3><p>打赏功能（ok，打赏图标有时候没显示出来），评论(OK)、文章阅读量（OK）、网站访问量（OK）、</p>
-<p>了解模板引擎、添加百度SEO、分享功能、网易云音乐（OK，放到位置有待调整）、相册、</p>
-<p>背景色为黑色(ok)、网站安全问题、网站手机版、网站备案、制作网站logo、樱花飘落的效果、</p>
-<h3 id="如何联系我："><a href="#如何联系我：" class="headerlink" title="如何联系我："></a>如何联系我：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">QQ：2844862119 （我喜欢你整整一个曾经）</span><br><span class="line">微信：XHM2279833535 （小红妹）</span><br><span class="line">E-mail：L2279833535@163.com</span><br></pre></td></tr></table></figure>
-<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/13/dac87c42408b169980c68a351152ecd4.png" alt="加我为好友"></p>
+        <span id = "post-title-updated">修改于 2018-07-29</span>
+      
+      
+      <span id = "post-title-categories">分类
+      
+      
+        
+        
+        <a href="/categories/Android-Studio/">Android Studio</a>
+      
+      </span>
+      
+      
+      <span id = "post-title-tags">
+      标签
+      
+      
+        
+        
+        <a href="/tags/Android-Studio/">Android Studio</a>
+      
+        
+          /
+        
+        
+        <a href="/tags/adb/">adb</a>
+      
+        
+          /
+        
+        
+        <a href="/tags/夜神模拟器/">夜神模拟器</a>
+      
+      </span>
+      
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    
+    <h2 id="cmd命令"><a href="#cmd命令" class="headerlink" title="cmd命令"></a>cmd命令</h2><p>先启动夜神模拟器，然后运行cmd（开始建+R），执行命令：</p>
+<p>F:\Nox\Nox\bin\nox_adb.exe connect 127.0.0.1:62001 </p>
+<p>说明：夜神模拟器安装路径+nox_adb.exe connect 127.0.0.1:62001 ，</p>
+<p>你可以cd到夜神安装目录，然后执行命令：nox_adb.exe connect 127.0.0.1:62001 连接到模拟器；这样的话有点麻烦，每次都要cd到夜神安装目录，有点浪费时间。建议你新建一个文本，找到夜神安装目录（比如我的是F:\Nox\Nox\bin）复制粘贴到文本，从这里把nox_adb.exe connect 127.0.0.1:62001 复制粘贴到其后面，注意，他们之间是使用 \ 分隔的，下次你直接复制到cmd命令，回车键搞定。</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/29/584f1dae40d153a280c7884df5ffd60a.png" alt="成功的样子"></p>
+<h2 id="adb命令"><a href="#adb命令" class="headerlink" title="adb命令"></a>adb命令</h2><p>如果你的Android Studio是打开的，也无需使用cmd命令，Android Studio的adb命令也是好的。</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/29/bcaf16fc40ec40ba805897f0cc90b85a.png" alt=""></p>
 
     
   </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#cmd命令"><span class="toc-text">cmd命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#adb命令"><span class="toc-text">adb命令</span></a></li></ol>
+  </div>
+</div>
 
   
 <nav id="pagination">
@@ -140,12 +198,72 @@
   
 
   
+    <a href="/2018/07/29/Connection-timed-out-connect/" class="next">下一篇 Connection timed out:connect &rarr;</a>
+  
 </nav>
 
   <!-- JiaThis Button BEGIN -->
 
 <!-- JiaThis Button END -->
 
+  
+      <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           喜欢文章就打赏一包辣条吧！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png)
+            ![](http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/b1be33f440b853398031437a9276fa90.png)
+         -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="<%- theme.root_url %><%=theme.Alipay%>"
+                <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
+        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/18/eab5047440cd874780e4ea4c3653830c.gif" alt="微信打赏">
+        
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+  
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+
+    <div id="container_gitment"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
+      owner: 'SmallRedSister',
+      repo: 'SmallRedSister.github.io',
+      oauth: {
+        client_id: 'df6608e5d308f152d01e',
+        client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+      },
+    })
+    gitment.render('container_gitment')
+    </script>
 
       
       
@@ -350,6 +468,8 @@ var unsplashConfig = {"gravity":"north"};
 var turnoffBackgroundImage = false;
 
 
+
+  turnoffBackgroundImage = true;
 
 
 var backgroundColor = "363B40";
