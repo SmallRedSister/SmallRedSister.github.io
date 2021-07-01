@@ -81,7 +81,7 @@ Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或�
       <div id="brand">
         
         <a onClick="openUserCard()">
-          <img id="avatar" src="http://file.youqian.tech/2018/07/08/22c2079c40b373688005b4e9a44857ce.jpg"/>
+          <img id="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center"/>
           <div id="homelink">小红妹</div>
         </a>
       </div>
@@ -141,7 +141,7 @@ Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或�
     <p class="page-title-sub">
       <span id = "post-title-date">撰写于 2018-07-20</span>
       
-        <span id = "post-title-updated">修改于 2018-07-20</span>
+        <span id = "post-title-updated">修改于 2021-07-01</span>
       
       
       <span id = "post-title-categories">分类
@@ -166,23 +166,23 @@ Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或�
           /
         
         
-        <a href="/tags/Typora/">Typora</a>
+        <a href="/tags/Bmob/">Bmob</a>
       
         
           /
         
         
-        <a href="/tags/Bmob/">Bmob</a>
+        <a href="/tags/Typora/">Typora</a>
       
       </span>
       
       <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
     </p>
     
-    <p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/13/baa79f934052c05380c9a6246138655b.jpg" alt="福利"></p>
+    <p><img src="http://file.youqian.tech/2018/07/13/baa79f934052c05380c9a6246138655b.jpg" alt="福利"></p>
 <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>​       网站搭建起来了，也装饰好，一切妥当，只欠东风（充实内容啊）；单有躯壳是不行的，还需要灵魂。没说错的话，估计我又开始废话了。这篇我们主要解决两个问题，1.使用什么工具写博客，2.博客中插入图片问题，</p>
 <h2 id="Hexo-编写博客工具"><a href="#Hexo-编写博客工具" class="headerlink" title="Hexo 编写博客工具"></a>Hexo 编写博客工具</h2><p>​       工具推荐使用Typora，不知道Typora或者还没安装Typora请看我的上一篇博客，<a href="https://liaichuan.top/2018/07/18/程序员必备神器%EF%BC%88Typora%EF%BC%89/" target="_blank" rel="noopener">程序员必备神器（Typora）</a>。你也可以使用Sublime Text 3 来写，Sublime Text 3 写的话需要写MD语法。我是两者一起配合使用😁。</p>
-<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/a3c170aa4073ec828053683170992e09.png" alt=""></p>
+<p><img src="http://file.youqian.tech/2018/07/20/a3c170aa4073ec828053683170992e09.png" alt=""></p>
 <h2 id="Hexo-在博文中插入图片"><a href="#Hexo-在博文中插入图片" class="headerlink" title="Hexo 在博文中插入图片"></a>Hexo 在博文中插入图片</h2><ul>
 <li>插入本地图片</li>
 <li>插入有链接的图片 </li>
@@ -191,11 +191,11 @@ Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或�
 <p>使用插件达到插入本地图片，在根目录输入如下命令安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 <p>今后你new 一篇博客时<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个同名的文件夹，把图片放到里面即可.</p>
-<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/d6bfd2a040c487af8072834dfa4d3388.png" alt=""></p>
+<p><img src="http://file.youqian.tech/2018/07/20/d6bfd2a040c487af8072834dfa4d3388.png" alt=""></p>
 <p>最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后只需要在xxxx.md中按照markdown的格式引入图片：<code>![你想输入的替代文字](xxxx/图片名.jpg)</code></p>
 <h3 id="插入有链接的图片"><a href="#插入有链接的图片" class="headerlink" title="插入有链接的图片"></a>插入有链接的图片</h3><p>​      考虑到本地存放图片图片，一占用电脑内存，二来博客项目过于膨大，想一下，一篇博客三四张图片，10篇20篇以后呢?所以我们不能只有一种对策方法，凡事都有三种对策方法才行。当然了，本地图片也有好处，存放更换频繁的、重要的、隐私的图片最佳选择。使用第三方平台保存图片的话，推荐使用<a href="https://www.bmob.cn/" target="_blank" rel="noopener">Bmob</a>和<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a>+MPic，我只讲Bmob。Bmob对于个人有应用来说再好不过，一个月有20G免费存储空间。</p>
 <p>Bmob先注册一个好号，然后创建一个应用，最后上传素材获取图片链接。功能很强大，用一次就知道了哈，</p>
-<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/20/9c71c8ed409f584480bff9bb9f115208.gif" alt=""></p>
+<p><img src="http://file.youqian.tech/2018/07/20/9c71c8ed409f584480bff9bb9f115208.gif" alt=""></p>
 
     
   </article>
@@ -329,7 +329,7 @@ Hexo 编写博客工具​       工具推荐使用Typora，不知道Typora或�
 
 <div id="user-card">
   <div class="center-field">
-    <img class="avatar" src="http://file.youqian.tech/2018/07/08/22c2079c40b373688005b4e9a44857ce.jpg">
+    <img class="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center">
     <p id="description">小红妹个人技术博客网站</p>
     <ul class="social-icon">
   
@@ -433,39 +433,29 @@ var isTriggerAnalytics = !( true && isIgnoreHost );
   var backgroundImages = [];
   
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/7853247d4028a39580ea62f4379a6c64.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165855273.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/8b93e788406fb10f802231e1cea1a0dc.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165352936.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/13/62491d7640e3f1b4805aa4948de25fc0.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165609260.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/838b99ab40b2c919807ab03f9603d24e.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165416450.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/12/e030e5a440c5410d808b655f3e53172d.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165737356.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/13d6077e4073529f80181764ba1ec7cb.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165101275.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/12/825e0e6740f3963d80c131acdc4849a5.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165645358.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/fcd53a6540f94dcd804cde42c79b15ce.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170503299.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/992bf1854056db8980f55aef3713099f.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165810417.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/13/baa79f934052c05380c9a6246138655b.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170351635.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/08/07014b0f40e5169980dd2893731e37aa.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170421272.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
-      backgroundImages.push('http://file.youqian.tech/2018/07/19/7e26cbdf40ea178280a6615eced15688.jpg');
-    
-      backgroundImages.push('http://file.youqian.tech/2018/07/12/a5ec1d1340151e088033026542c1e897.jpg');
-    
-      backgroundImages.push('http://file.youqian.tech/2018/07/12/dcf44fca409852ce8056878d1a6f8706.jpg');
-    
-      backgroundImages.push('http://file.youqian.tech/2018/07/13/98aaae1f40585be7806f478798848548.jpg');
-    
-      backgroundImages.push('http://file.youqian.tech/2018/07/19/3aa259ff404c2ff4800887838b416614.jpg');
-    
-      backgroundImages.push('http://file.youqian.tech/2018/07/19/14833d58409a471d80edfb7c253dbb47.jpg');
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170330974.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
     
   
   $('#post').each(function(i){
