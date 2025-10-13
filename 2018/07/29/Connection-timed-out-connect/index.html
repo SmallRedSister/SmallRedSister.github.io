@@ -1,0 +1,516 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <style>
+      .pace .pace-progress {
+          background: #1E92FB; /*进度条颜色*/
+          height: 3px;
+      }
+      .pace .pace-progress-inner {
+           box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+      }
+      .pace .pace-activity {
+          border-top-color: #1E92FB;    /*上边框颜色*/
+          border-left-color: #1E92FB;    /*左边框颜色*/
+      }
+  </style>
+  
+  <meta name="author" content="SmallRedSister">
+  
+  
+  
+  
+    <meta name="description" content="前言：​       每次换公司，上班第一天就是安装Android Studio，然而，有这么一次，我竟然安装了两天还没弄好😂，出现的问题如下，网上各种找解决方法，各种问朋友，都没用。
+
+
+解决方法：1.尝试翻墙2.尝试设置代理3.尝试切换电脑网络4.尝试使用手机流量热点5.尝试不要使用路由器，网线直接插电脑总结：我是使用第五个方法解决的问题。好尴尬啊！">
+  
+  <title>Connection timed out:connect [ 小红妹 ]</title>
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+<link rel="stylesheet" href="/css/donate.css">
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+    <div class="item prev">
+      <a href="/2018/09/23/Advertisement/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Advertisement
+      </div>
+    </div>
+  
+  
+    <div class="item next">
+      <a href="/2018/07/08/hello-world/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        Hello hexo
+      </div>
+    </div>
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center"/>
+          <div id="homelink">小红妹</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="post">
+    <h1>Connection timed out:connect</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2018-07-29</span>
+      
+        <span id = "post-title-updated">修改于 2018-07-29</span>
+      
+      
+      <span id = "post-title-categories">分类
+      
+      
+        
+        
+        <a href="/categories/Android-Studio-%E5%BC%82%E5%B8%B8/">Android Studio 异常</a>
+      
+      </span>
+      
+      
+      <span id = "post-title-tags">
+      标签
+      
+      
+        
+        
+        <a href="/tags/Android-Studio/">Android Studio</a>
+      
+        
+          /
+        
+        
+        <a href="/tags/Connection-timed-out-connect/">Connection timed out:connect</a>
+      
+      </span>
+      
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    
+    <p><img src="https://ww1.sinaimg.cn/large/0065oQSqly1ftf1snjrjuj30se10r1kx.jpg" alt="福利"></p>
+<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>​       每次换公司，上班第一天就是安装Android Studio，然而，有这么一次，我竟然安装了两天还没弄好😂，出现的问题如下，网上各种找解决方法，各种问朋友，都没用。</p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/29/eb646158407c2a9f8036870edf22c0fb.png" alt=""></p>
+<p><img src="http://bmob-cdn-20430.b0.upaiyun.com/2018/07/29/b8a0f83f40dd14fb80b434e09c20ef66.png" alt=""></p>
+<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><h3 id="1-尝试翻墙"><a href="#1-尝试翻墙" class="headerlink" title="1.尝试翻墙"></a>1.尝试翻墙</h3><h3 id="2-尝试设置代理"><a href="#2-尝试设置代理" class="headerlink" title="2.尝试设置代理"></a>2.尝试设置代理</h3><h3 id="3-尝试切换电脑网络"><a href="#3-尝试切换电脑网络" class="headerlink" title="3.尝试切换电脑网络"></a>3.尝试切换电脑网络</h3><h3 id="4-尝试使用手机流量热点"><a href="#4-尝试使用手机流量热点" class="headerlink" title="4.尝试使用手机流量热点"></a>4.尝试使用手机流量热点</h3><h3 id="5-尝试不要使用路由器，网线直接插电脑"><a href="#5-尝试不要使用路由器，网线直接插电脑" class="headerlink" title="5.尝试不要使用路由器，网线直接插电脑"></a>5.尝试不要使用路由器，网线直接插电脑</h3><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>我是使用第五个方法解决的问题。好尴尬啊！</p>
+
+    
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A"><span class="toc-text">前言：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-text">解决方法：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%B0%9D%E8%AF%95%E7%BF%BB%E5%A2%99"><span class="toc-text">1.尝试翻墙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B0%9D%E8%AF%95%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86"><span class="toc-text">2.尝试设置代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B0%9D%E8%AF%95%E5%88%87%E6%8D%A2%E7%94%B5%E8%84%91%E7%BD%91%E7%BB%9C"><span class="toc-text">3.尝试切换电脑网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%B0%9D%E8%AF%95%E4%BD%BF%E7%94%A8%E6%89%8B%E6%9C%BA%E6%B5%81%E9%87%8F%E7%83%AD%E7%82%B9"><span class="toc-text">4.尝试使用手机流量热点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%B0%9D%E8%AF%95%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%8C%E7%BD%91%E7%BA%BF%E7%9B%B4%E6%8E%A5%E6%8F%92%E7%94%B5%E8%84%91"><span class="toc-text">5.尝试不要使用路由器，网线直接插电脑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%EF%BC%9A"><span class="toc-text">总结：</span></a></li></ol></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2018/09/23/Advertisement/" class="prev">&larr; 上一篇 Advertisement</a>
+  
+
+  
+
+  
+    <a href="/2018/07/08/hello-world/" class="next">下一篇 Hello hexo &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+  
+      <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           喜欢文章就打赏一包辣条吧！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](http://file.youqian.tech/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png)
+            ![](http://file.youqian.tech/2018/07/16/b1be33f440b853398031437a9276fa90.png)
+         -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="<%- theme.root_url %><%=theme.Alipay%>"
+                <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
+        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://file.youqian.tech/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="https://img-blog.csdnimg.cn/20210702142439991.gif#pic_center" alt="微信打赏">
+        <!-- http://file.youqian.tech/2018/07/18/eab5047440cd874780e4ea4c3653830c.gif -->
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+  
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+
+    <div id="container_gitment"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
+      owner: 'SmallRedSister',
+      repo: 'SmallRedSister.github.io',
+      oauth: {
+        client_id: 'df6608e5d308f152d01e',
+        client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+      },
+    })
+    gitment.render('container_gitment')
+    </script>
+
+      
+      
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div class="theme-info">
+      <div class="powered-by"></div>
+      <span class="post-count">全站博客共12.7k字(●'◡'●)ﾉ♥</span>
+    </div>
+    <div id="bottom-inner">
+      Site by SmallRedSister using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
+    </div>
+    <span>© 2018-2025 |</span>
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date(); 
+        function createtime() { 
+            var grt= new Date("07/08/2018 12:00:00");//此处修改你的建站时间或者网站上线时间 
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length == 1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length == 1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length == 1 ){snum = "0" + snum;} 
+            document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒 | "; 
+        } 
+    setInterval("createtime()",250);
+    </script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_uv">| 访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+  </div>
+</div>
+
+</div>
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center">
+    <p id="description"></p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/SmallRedSister/SmallRedSister.github.io">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://blog.csdn.net/L_201607">
+        
+          CSDN
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://space.bilibili.com/96203578/#/">
+        
+          BiLiBiLi
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://weibo.com/5604433427/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://www.jianshu.com/u/c7034c016763">
+        
+          <i class="icon iconfont jian">&#xe614;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://chensd.com/feed">
+        
+          <i class="icon iconfont rss">&#xe60e;</i>
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+    <script src="/js/fireworks.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165855273.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165352936.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165609260.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165416450.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165737356.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165101275.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165645358.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170503299.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165810417.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170351635.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170421272.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170330974.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":3500,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "363B40";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
+</html>
+

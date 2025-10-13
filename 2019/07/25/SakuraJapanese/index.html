@@ -1,0 +1,513 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+  <style>
+      .pace .pace-progress {
+          background: #1E92FB; /*进度条颜色*/
+          height: 3px;
+      }
+      .pace .pace-progress-inner {
+           box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+      }
+      .pace .pace-activity {
+          border-top-color: #1E92FB;    /*上边框颜色*/
+          border-left-color: #1E92FB;    /*左边框颜色*/
+      }
+  </style>
+  
+  <meta name="author" content="SmallRedSister">
+  
+  
+  
+  
+    <meta name="description" content="樱花日语应用隐私政策尊敬的用户：
+  樱花日语应用是由小红妹（李小红）开发，贵州菟丝子科技有限公司（以下简称“菟丝子”）运营为您提供的一款学习日语服务产品。  隐私政策协议内容是非常重要的，内容如下，请认真阅读，这关于在您使用该APP时隐私是否安全。  根据国家相关政策及法律法规，本应用尊重并保护所有使用服务用户的个人隐私权。 本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将...">
+  
+  <title>SakuraJapanese [ 小红妹 ]</title>
+  
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+<link rel="stylesheet" href="/css/donate.css">
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+<div class="side-navigate hide-area">
+  
+    <div class="item prev">
+      <a href="/2019/08/04/PaintingBoard/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        PaintingBoard
+      </div>
+    </div>
+  
+  
+    <div class="item next">
+      <a href="/2019/06/15/AppShareUrl/">
+        <div class="item-icon"></div>
+      </a>
+      <div class="item-title">
+        AppShareUrl
+      </div>
+    </div>
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
+        
+        <a onClick="openUserCard()">
+          <img id="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center"/>
+          <div id="homelink">小红妹</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
+        
+        
+          
+            <li>
+          
+            <a href="/index.html">Home</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">Archives</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/categories">Categories</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">Tags</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">About</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="post">
+    <h1>SakuraJapanese</h1>
+    <p class="page-title-sub">
+      <span id = "post-title-date">撰写于 2019-07-25</span>
+      
+        <span id = "post-title-updated">修改于 2024-02-05</span>
+      
+      
+      
+      <span id = "post-title-tags">
+      标签
+      
+      
+        
+        
+        <a href="/tags/app/">app</a>
+      
+      </span>
+      
+      <span id="busuanzi_container_page_pv">阅读数量：<span id="busuanzi_value_page_pv"></span>次</span>
+    </p>
+    
+    <h3 id="樱花日语应用隐私政策"><a href="#樱花日语应用隐私政策" class="headerlink" title="樱花日语应用隐私政策"></a>樱花日语应用隐私政策</h3><p>尊敬的用户：</p>
+<p>  樱花日语应用是由小红妹（李小红）开发，贵州菟丝子科技有限公司（以下简称“菟丝子”）运营为您提供的一款学习日语服务产品。<br>  隐私政策协议内容是非常重要的，内容如下，请认真阅读，这关于在您使用该APP时隐私是否安全。<br>  根据国家相关政策及法律法规，本应用尊重并保护所有使用服务用户的个人隐私权。 本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将以高度的勤勉、审慎义务对待这些信息。 除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。 本应用会不时更新本隐私权政策。在您使用本应用时，会要求用户授予应用一定的权限，这些权限都是应用正常运行的必要权限，<br>一、樱花日语如何收集和使用您的个人隐私信息</p>
+<p>  此APP属于个人开发者开发，且没有客户端后台,也不需要一直在手机后台运行。 APP不存在收集、分享、泄露用户任何个人隐私信息，APP中的语音播放和翻译需要联网， 此APP不需要用户注册及登录；没有加入消息推送，不加入APP使用数据统计； 不会将用户隐私信息私自共享给第三方，不会强制向用户使用定向推送功能。不搞电话推销这一套。</p>
+<p>二、应用接入的第三方SDK目录</p>
+<p>  为保障樱花日语相关功能的实现与应用安全稳定的运行，我们可能会接入由第三方提供的软件开发包（SDK）实现相关的目的。 我们会对合作方获取信息的软件工具开发包（SDK）进行严格的安全监测，以保护数据安全，并对您及时公开说明接入SDK的最新情况， 具体请以第三方SDK的官方隐私政策为准。</p>
+<p>腾讯优量汇 SDK<br>公司名称：深圳市腾讯计算机系统有限公司<br>SDK包名：com.qq.e.comm<br>使用目的：广告服务<br>数据类型：设备标识信息、地理位置信息<br>数据字段：设备信息、IMEI、IMSI、Android_ID、获取传感器信息（BODY_SENSORS）、系统版本、位置信息、应用列表、网络类型、获取陀螺仪传感器和加速度传感器<br>官网链接：<a href="https://e.q.com/optout.html">https://e.q.com/optout.html</a><br>隐私政策：<a href="https://e.qq.com/dev/help_detail.html?cid=2005&amp;pid=5983">https://e.qq.com/dev/help_detail.html?cid=2005&amp;pid=5983</a></p>
+<p>穿山甲 SDK<br>公司名称：北京巨量引擎网络技术有限公司<br>使用目的：广告投放及监测归因、反作弊、统计分析、减少App崩溃、提供可靠稳定的服务<br>数据类型：设备标识信息、地理位置信息<br>数据字段：设备信息、IMEI、IMSI、Android_ID、IP地址、MAC地址、系统版本、位置信息、应用列表、网络类型<br>官网链接：<a href="https://www.csjplatform.com/">https://www.csjplatform.com/</a><br>隐私政策：<a href="https://www.csjplatform.com/privacy/partner">https://www.csjplatform.com/privacy/partner</a></p>
+<p>SDK名称：com.bytedance<br>SDK包名：com.bytedance<br>使用目的：优化广告服务<br>收集个人信息类型：获取设备序列号、获取IP地址、获取MAC地址、获取IMEI、获取Android_ID</p>
+<p>声通语音测评SDK<br>公司名称：苏州声通信息科技有限公司<br>使用目的：语音测评<br>数据类型：设备识别信息<br>设备信息：IMEI、Device ID、Android ID、UUID、架构、设备名称、系统版本<br>数据字段：设备信息、设备唯一识别码、网络类型<br>官网链接：<a href="https://www.isuntone.com/">https://www.isuntone.com/</a><br>隐私政策：<a href="https://www.isuntone.com/sdk/policy.html">https://www.isuntone.com/sdk/policy.html</a></p>
+<p>三、数据来源说明</p>
+<p>  数据（包括图片）由个人平常收集于网络或网友、粉丝分享而来，数据集成到樱花日语只是为了方便更多朋友学习。 若无意冒犯到您的版权，请联系我们的客服添加数据来源说明、删除等处理（需提供相关资质版权证明）。<br>2-1、多语言翻译<br>  多语言翻译调用的是百度通用翻译API，目前支持中日英互译。支持翻译后语音播报<br>2-2、日语汉字查询<br>  日语汉字查询由外国朋友jhspetersson提供数据，数据来源于<a href="http://KanjiDamage.com网站，非常感谢！">http://KanjiDamage.com网站，非常感谢！</a><br>2-3、动漫吐槽大会<br>  动漫吐槽大会图片内容收集于AnimeShot，非常感谢！<br>2-4、新标准日语语法总结<br>  新标准日语语法总结来自付康为的日语笔记，在文章末尾有提到出处。非常感谢！<br>2-5、精美日文-学习资料库<br>  精美日文-学习资料库数据来源于日语学习网。非常感谢！<br>2-6、启动页背景图<br>  进入应用过程中，启动页随机播放一张精美图片，图片大部分由深爱樱花日语应用的用户们提供。非常感谢！<br>2-7、文本转语音<br>  由合作方微软认知服务（Azure）提供<br>2-8、语音测评<br>  由合作方苏州声通信息科技服务提供</p>
+<p>四、樱花日语向用户所请求的隐私权限的具体用途</p>
+<p>  为了提供更好的应用内容和开发热情，我们向应用添加了轻度广告服务， 应用运行期间需要收集您的设备唯一识别码（IMEI/android ID/MAC地址/OAID/IP）和获取运行中的进程及信息以提供广告分析服务。<br> 4.0、获取剪切板内容。<br>多语翻译功能提供获取剪切板内容，方便用户识别粘贴和拷贝翻译内容。<br> 4.1、允许访问您设备上的照片、媒体内容文件。<br>获取存储权限主要为了缓存部分图片，提高app运行流畅度；动漫吐槽大会图片保存到本地需要此权限，语音测评功能需要此权限，用于缓存语音和录音文件到本地。<br> 4.2、允许应用获取设备信息。<br>当您在使用我们的樱花日语app时，我们需要收集您的一些信息，包括如下个人信息：设备型号、设备名称、 唯一设备识别码、接入网络的方式、网络质量数据、移动网络信息。同时为了收集上述基本的个人设备信息， 我们将会申请访问您的设备信息的权限，我们收集这些信息是为了向您提供广告服务和语音测评服务。<br> 4.3、GET_TASKS（获取运行中的进程）<br>获取运行中的进程是为了优化广告服务<br> 4.4、获取麦克风录音权限。<br>允许程序录制声音通过手机或耳机的麦克风，获取该权限主要为了录制用户声音进行语音测评， 当您在我们的产品中使用录音和实时语音服务时我们需要访问您的麦克风相关权限。 如您拒绝提供仅会使您无法使用该功能，但并不影响您正常使用产品与/或服务的其他功能。</p>
+<p>五、如何更新与修改本政策</p>
+<p>  樱花日语开发者保留随时更新本声明的权利，当声明发生修改时，我们会在每个版本应用更新简介或发出本《隐私政策》的更新版本又或以其他方式提醒您相关内容的更新。 如您继续使用我们的服务，即视为您同意我们的变更后的隐私政策，我们才会按照更新的声明收集、使用、存储您的个人信息。<br>六、如何联系我们</p>
+<p>  如果对此隐私政策有如任何问题或对APP有相关问题反馈及建议，可通过下面方式联系我们，您还可以把喜欢的图片发给群管理员，我们会投放到应用启动页中：<br> 6-1.可在APP关于我们页面找到相关联系方式。<br> 6-2.欢迎加入樱花日语QQ官方群：609243272（需备注樱花日语app用户），有什么好的想法或者建议，欢迎提出，软件更新会第一时间发到群文件。<br> 6-3.反馈邮箱: <a href="mailto:2844862119@qq.com">2844862119@qq.com</a><br> 6-4.商务合作: Nvluo20210911(微信，注明来意)<br> 6-5.B站ID：UID:96203578</p>
+<p>最后说一点</p>
+<p>  华为市场应用评论区多次被评为“神仙软件”，应用上线受到很多用户喜爱，也有一些朋友提出了很好的建议，在此感谢大家的喜欢和支持，应用会不断的优化、更新和完善， 还有很多小伙伴对樱花日语app做出过贡献，这里没有一一提到名字，在此对大家表示由衷的感谢！感谢您们的支持。</p>
+<p>  樱花日语开发者<br>  更新时间：2024 年 02 月 05 号<br>  生效时间：2024 年 02 月 06 号</p>
+
+    
+  </article>
+  <div class="random-toc-area">
+  <button class="btn-hide-toc btn-hide-toc-show" style="display: none" onclick="TOCToggle()">显示目录</button>
+  <button class="btn-hide-toc btn-hide-toc-hide" onclick="TOCToggle()">隐藏目录</button>
+  <div class="random-toc">
+    <h2>目录</h2>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A8%B1%E8%8A%B1%E6%97%A5%E8%AF%AD%E5%BA%94%E7%94%A8%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96"><span class="toc-text">樱花日语应用隐私政策</span></a></li></ol>
+  </div>
+</div>
+
+  
+<nav id="pagination">
+  
+    <a href="/2019/08/04/PaintingBoard/" class="prev">&larr; 上一篇 PaintingBoard</a>
+  
+
+  
+
+  
+    <a href="/2019/06/15/AppShareUrl/" class="next">下一篇 AppShareUrl &rarr;</a>
+  
+</nav>
+
+  <!-- JiaThis Button BEGIN -->
+
+<!-- JiaThis Button END -->
+
+  
+      <! -- 添加捐赠图标 -->
+<div class ="post-donate">
+    <div id="donate_board" class="donate_bar center">
+        <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏"></a>
+        <span class="donate_txt">
+           ↑<br>
+           喜欢文章就打赏一包辣条吧！
+        </span>
+        <br>
+      </div>  
+    <div id="donate_guide" class="donate_bar center hidden" >
+        <!-- 方式一：
+            ![](http://file.youqian.tech/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png)
+            ![](http://file.youqian.tech/2018/07/16/b1be33f440b853398031437a9276fa90.png)
+         -->
+        <!-- 方式二；
+            step1：在_config.yml中添加配置
+                Alipay: /img/Alipay.jpg
+                WeChatpay: /img/WeChatpay.jpg
+            step2：此处两张图片的路径分别设置为如下
+                <img src="<%- theme.root_url %><%=theme.Alipay%>"
+                <img src="<%- theme.root_url %><%=theme.WeChatpay%>"
+        -->
+        <!-- 支付宝打赏图案 
+        <img src="http://file.youqian.tech/2018/07/16/818aaf3940fcb81b80cec7fb39bcb0b2.png" alt="支付宝打赏"> -->
+        <!-- 微信打赏图案 -->
+        <img src="https://img-blog.csdnimg.cn/20210702142439991.gif#pic_center" alt="微信打赏">
+        <!-- http://file.youqian.tech/2018/07/18/eab5047440cd874780e4ea4c3653830c.gif -->
+    </div>
+    <script type="text/javascript">
+        document.getElementById('btn_donate').onclick = function(){
+            $('#donate_board').addClass('hidden');
+            $('#donate_guide').removeClass('hidden');
+        }
+    </script>
+</div>
+<! -- 添加捐赠图标 -->
+
+  
+
+  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=863481092&auto=1&height=66"></iframe>
+
+    <div id="container_gitment"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '<%= page.date %>', // 可选。默认为 location.href    评论留言
+      owner: 'SmallRedSister',
+      repo: 'SmallRedSister.github.io',
+      oauth: {
+        client_id: 'df6608e5d308f152d01e',
+        client_secret: '9082376877997e4d06e6804037ed3af7d375d07a',
+      },
+    })
+    gitment.render('container_gitment')
+    </script>
+
+      
+      
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div class="theme-info">
+      <div class="powered-by"></div>
+      <span class="post-count">全站博客共12.7k字(●'◡'●)ﾉ♥</span>
+    </div>
+    <div id="bottom-inner">
+      Site by SmallRedSister using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
+    </div>
+    <span>© 2018-2025 |</span>
+    <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+        var now = new Date(); 
+        function createtime() { 
+            var grt= new Date("07/08/2018 12:00:00");//此处修改你的建站时间或者网站上线时间 
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length == 1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length == 1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length == 1 ){snum = "0" + snum;} 
+            document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+            document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒 | "; 
+        } 
+    setInterval("createtime()",250);
+    </script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span id="busuanzi_container_site_uv">| 访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+  </div>
+</div>
+
+</div>
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="https://img-blog.csdnimg.cn/20210629170204714.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center">
+    <p id="description"></p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="https://github.com/SmallRedSister/SmallRedSister.github.io">
+        
+          <i class="icon iconfont github">&#xe606;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://blog.csdn.net/L_201607">
+        
+          CSDN
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://space.bilibili.com/96203578/#/">
+        
+          BiLiBiLi
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://weibo.com/5604433427/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1">
+        
+          <i class="icon iconfont weibo">&#xe602;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="https://www.jianshu.com/u/c7034c016763">
+        
+          <i class="icon iconfont jian">&#xe614;</i>
+        
+      </a>
+    </li>
+  
+    <li>
+      <a href="http://chensd.com/feed">
+        
+          <i class="icon iconfont rss">&#xe60e;</i>
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
+
+<script>
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
+</script>
+
+
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+    <script src="/js/fireworks.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165855273.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165352936.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165609260.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165416450.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165737356.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165101275.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165645358.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170503299.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629165810417.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170351635.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170421272.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+      backgroundImages.push('https://img-blog.csdnimg.cn/20210629170330974.jpg?type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMjAxNjA3,size_16,color_FFFFFF,t_70#pic_center');
+    
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
+
+var vegasConfig = {"preload­Image":true,"transition":["slideLeft2","slideRight2","flash2"],"timer":true,"delay":3500,"shuffle":true,"count":28};
+var unsplashConfig = {"gravity":"north"};
+// is show background images
+var turnoffBackgroundImage = false;
+
+
+
+  turnoffBackgroundImage = true;
+
+
+var backgroundColor = "363B40";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
+</script>
+  
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body>
+</html>
+
